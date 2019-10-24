@@ -1,0 +1,68 @@
+<configs>
+
+<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+
+  	<lootgroup name="Banjo" count="all">
+		<item name="meleeBanjo" count="1"/>
+	</lootgroup>
+
+</insertBefore>
+
+<!-- Safes/weapon caches/rare good loot -->
+<append xpath="/lootcontainers/lootcontainer[@id='11']">
+	<item group="Banjo" count="1" prob="0.1"/>
+</append>
+
+<!-- Metal desk -->
+<append xpath="/lootcontainers/lootcontainer[@id='24']">
+	<item group="Banjo" count="1" prob="0.1"/>
+</append>
+
+<!-- Supply drop General -->
+<append xpath="/lootcontainers/lootcontainer[@id='34']">
+	<item group="Banjo" count="1" prob="0.1"/>
+</append>
+
+<!-- Gun Safe -->
+<append xpath="/lootcontainers/lootcontainer[@id='42']">
+	<item group="Banjo" count="1" prob="0.15"/>
+</append>
+
+<!-- Fancy chest -->
+<append xpath="/lootcontainers/lootcontainer[@id='41']">
+	<item group="Banjo" count="1" prob="0.1"/>
+</append>
+
+<!-- Shotgun Messiah -->
+<append xpath="/lootcontainers/lootcontainer[@id='50']">
+	<item group="Banjo" count="1" prob="0.025"/>
+</append>
+
+<!-- Treasure Chest -->
+<append xpath="/lootcontainers/lootcontainer[@id='61']">
+	<item group="Banjo" count="1" prob="0.1"/>
+</append>
+
+<!--  Zombie Loot 1 -->
+<append xpath="/lootcontainers/lootcontainer[@id='70']">
+	<item group="Banjo" count="1" prob="0.2"/>
+</append>
+
+<!-- Zombie Loot 2 -->
+<append xpath="/lootcontainers/lootcontainer[@id='71']">
+	<item group="Banjo" count="1" prob="0.2"/>
+</append>
+
+
+<!-- Weapons Bag Small -->
+<append xpath="/lootcontainers/lootcontainer[@id='100']">
+	<item group="Banjo" count="1" prob="0.2"/>
+</append>
+
+
+<!-- Weapons Bag Large -->
+<append xpath="/lootcontainers/lootcontainer[@id='101']">
+	<item group="Banjo" count="1" prob="0.3"/>
+</append>
+
+</configs>

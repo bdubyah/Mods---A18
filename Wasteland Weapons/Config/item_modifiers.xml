@@ -1,0 +1,142 @@
+<configs>
+	<append xpath="/item_modifiers">
+	
+	<item_modifier name="modOilFilterSuppressor" installable_tags="gun,PipeGun" blocked_tags="revolver,flaredBarrel" modifier_tags="barrelAttachment" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="pipefiltersuppressor"/>
+		<property name="DescriptionKey" value="modOilFilterSuppressorDesc"/>
+		<property name="HandMeshfile" value="#@modfolder:Resources/Attachments.unity3d?OilFilterSuppressor"/>
+		<property name="DropMeshfile" value="#@modfolder:Resources/Attachments.unity3d?OilFilterSuppressor"/>
+		<!--Decreases sound footprint by x% -->
+		<item_property_overrides name="*">
+			<property name="Sound_start" value="silenced_fire"/>
+			<property name="Sound_end" value=""/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunPistol">
+			<property name="Sound_start" value="pistol_s_fire"/>
+			<property name="BarrelOffset" value="0,0.073,0.16"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Pipe Pistol">
+			<property name="Sound_start" value="pistol_s_fire"/>
+			<property name="BarrelOffset" value="0,0,0"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Pipe Rifle">
+			<property name="Sound_start" value="sniperrifle_s_fire"/>
+			<property name="BarrelOffset" value="0,0,0"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value=".05"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.05">
+				<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="80"/>
+			</passive_effect>
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.05">
+				<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="80"/>
+			</passive_effect>
+			<passive_effect name="MaxRange" operation="perc_add" value="-.05">
+				<requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="80"/>
+			</passive_effect>
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/Attachments.unity3d?OilFilterSuppressor" parent_transform="Attachments/Barrel"/>
+			<!-- stealth/noise stuff here -->
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+	
+	<item_modifier name="modLargeMag" installable_tags="PipeGun" modifier_tags="magazine" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="pipemaglarge"/>
+		<property name="DescriptionKey" value="modLargeMagDesc"/>
+		<!--Adds increased Ammunition-->
+		<effect_group tiered="false">
+		<passive_effect name="MagazineSize" operation="perc_add" value="1"/>
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/Attachments.unity3d?Mag_Large_Rifle.prefab" parent_transform="Attachments/Mag"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+	
+	<item_modifier name="modLongRifleBarrel" installable_tags="LongBarrel" blocked_tags="flaredBarrel" modifier_tags="newbarrelAttachment" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="LongBarrel"/>
+		<property name="DescriptionKey" value="modLongRifleBarrelDesc"/>
+		<item_property_overrides name="*">
+			<property name="HandMeshfile" value="#@modfolder:Resources/PipeRifle.unity3d?Pipe_Rifle_Long.prefab"/>
+		</item_property_overrides>
+
+		<effect_group tiered="false" name="Base Effects"> 
+			<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
+			<passive_effect name="MaxRange" operation="base_set" value="130"/>
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value=".4"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value=".25"/>
+			<passive_effect name="SpreadDegreesVertical" operation="perc_set" value="2"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_set" value="2"/>
+			<passive_effect name="WeaponHandling" operation="base_set" value="0.6"/>
+			
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+		
+	<item_modifier name="modShotgunCylinderMag" installable_tags="none" modifier_tags="magazine" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="ShotgunEM"/>
+		<property name="DescriptionKey" value="modShotgunCylinderMagDesc"/>
+		<property name="HandMeshfile" value="#@modfolder:Resources/Attachments.unity3d?ShotgunEM"/>
+		<property name="DropMeshfile" value="#@modfolder:Resources/Attachments.unity3d?ShotgunEM"/>
+		<!--
+		<item_property_overrides name="gunPipeShotgunSMSB">
+			<property name="HandMeshfile" value="#@modfolder:Resources/PipeShotgunEM.unity3d?Pipe_Shotgun_EMLB"/>
+		</item_property_overrides>-->
+		<effect_group tiered="false">
+		<passive_effect name="MagazineSize" operation="perc_add" value="3"/>
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="45"/>
+		<passive_effect name="WeaponHandling" operation="perc_subtract" value="0.1"/>
+		
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+	
+	<item_modifier name="modLongShotgunBarrel" installable_tags="PipeShotgun" blocked_tags="flaredBarrel" modifier_tags="newbarrelAttachment" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="CustomIcon" value="LongBarrelShotgun"/>
+		<property name="DescriptionKey" value="modLongShotgunBarrelDesc"/>
+		<item_property_overrides name="gunPipeShotgunSMSB">
+			<property name="HandMeshfile" value="#@modfolder:Resources/PipeShotgun.unity3d?Pipe_Shotgun_SMLB"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunPipeShotgunEMSB">
+			<property name="HandMeshfile" value="#@modfolder:Resources/PipeShotgunEM.unity3d?Pipe_Shotgun_EMLB"/>
+		</item_property_overrides>
+
+		<effect_group tiered="false" name="Base Effects"> 
+			<passive_effect name="MaxRange" operation="base_add" value="10"/>
+			<passive_effect name="DamageFalloffRange" operation="base_add" value="3"/>
+			<passive_effect name="DismemberChance" operation="perc_subtract" value=".25" tags="leg,arm"/>
+			<passive_effect name="SpreadDegreesVertical" operation="perc_subtract" value=".22"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_subtract" value=".22"/>
+			
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+	
+	<item_modifier name="modFlashlight" installable_tags="PipeShotgun,PipeGun" modifier_tags="sideAttachment" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="LightValue" value="0.7"/>
+		<property name="CustomIcon" value="meleeToolFlashlight02"/><property name="CustomIconTint" value="4b844b"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/Attachments.unity3d?modFlashlight" parent_transform="Attachments/Side"/>
+			<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="Side" transform_path="lightSource"/>
+			<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Side" transform_path="lightSource"/>
+			<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="Side" transform_path="lightSource"/>
+		</effect_group>
+
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+	
+	</append>
+</configs>			

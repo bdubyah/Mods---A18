@@ -1,0 +1,89 @@
+<configs>
+
+<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+
+	<lootgroup name="LegendaryPipeWeapons">
+		<item name="gunPipePistol_Legendary" count="1"/>
+		<item name="gunPipeShotgunSMSB_Legendary" count="1"/>
+		<item name="gunPipeRifle_Legendary" count="1"/>
+	</lootgroup>
+	
+</insertBefore>
+
+<!-- safes, weapon caches rare good loot -->
+<append xpath="/lootcontainers/lootcontainer[@id='11']">
+	<item group="LegendaryPipeWeapons" prob=".002"/>
+</append>
+
+<!-- metal desk -->
+<append xpath="/lootcontainers/lootcontainer[@id='24']">
+	<item group="LegendaryPipeWeapons" prob=".002"/>
+</append>
+
+<!-- cntLootChestHero, fancy chest -->
+<append xpath="/lootcontainers/lootcontainer[@id='41']">
+	<item group="LegendaryPipeWeapons" prob=".002"/>
+</append>
+
+<!-- gun safe -->
+<append xpath="/lootcontainers/lootcontainer[@id='42']">
+	<item group="LegendaryPipeWeapons" prob=".009"/>
+</append>
+
+<!-- Treasure chest -->
+<append xpath="/lootcontainers/lootcontainer[@id='61']">
+	<item group="LegendaryPipeWeapons" prob=".007"/>
+</append>
+
+<!-- cntLootCrateHero, Hero / Hidden Stash Cardboard Loot-->
+<append xpath="/lootcontainers/lootcontainer[@id='95']">
+	<item group="LegendaryPipeWeapons" prob=".007"/>
+</append>
+
+<!-- cntWeaponsBagSmall -->
+<append xpath="/lootcontainers/lootcontainer[@id='100']">
+	<item group="LegendaryPipeWeapons" prob=".003"/>
+</append>
+
+<!-- cntWeaponsBagLarge -->
+<append xpath="/lootcontainers/lootcontainer[@id='101']">
+	<item group="LegendaryPipeWeapons" prob=".003"/>
+</append>
+
+<!-- cntBuriedStashChest -->
+<append xpath="/lootcontainers/lootcontainer[@id='102']">
+	<item group="LegendaryPipeWeapons" prob=".007"/>
+</append>
+
+
+
+<!--Oil Filter mod-->
+<!-- cars-->
+<append xpath="/lootcontainers/lootcontainer[@id='19']">
+	<item name="modOilFilterSuppressor" prob="0.1"/>
+</append>
+
+<!-- garage stuff, tools, etc -->
+<append xpath="/lootcontainers/lootcontainer[@id='22']">
+	<item name="modOilFilterSuppressor" prob="0.1"/>
+</append>
+
+<!-- army truck-->
+<append xpath="/lootcontainers/lootcontainer[@id='83']">
+	<item name="modOilFilterSuppressor" prob="0.3"/>
+</append>
+
+<!-- car parts shipping crate -->
+<append xpath="/lootcontainers/lootcontainer[@id='90']">
+	<item name="modOilFilterSuppressor" prob="0.3"/>
+</append>
+
+<!-- cntToolBoxClosed, cntRollingToolBoxClosed -->
+<append xpath="/lootcontainers/lootcontainer[@id='124']">
+	<item name="modOilFilterSuppressor" prob="0.15"/>
+</append>
+
+
+
+
+</configs>

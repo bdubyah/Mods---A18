@@ -1,0 +1,2 @@
+meleeRebarClub,items,Melee,KgNone,Rebar Club,,,,,
+meleeRebarClubDesc,items,Melee,KgNone,A heavy melee weapon. Scavenged from the rubble out in the wasteland...,,,,,

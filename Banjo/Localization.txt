@@ -1,0 +1,2 @@
+meleeBanjo,items,Melee,KgNone,Banjo,,,,,
+meleeBanjoDesc,items,Melee,KgNone,A melee weapon. A good choice when trying to win Zombie Kill of the Week!,,,,,

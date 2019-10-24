@@ -1,0 +1,10 @@
+<configs>
+<!--<append xpath="/blocks">-->
+
+	<append xpath="/blocks/block[@name='cntCar03SedanDamage0Master']">	
+		<drop event="Harvest" name="modOilFilterSuppressor" count="1" prob=".2" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntCar03SedanDamage1Master']">	
+		<drop event="Harvest" name="modOilFilterSuppressor" count="1" prob=".2" tag="salvageHarvest"/>
+	</append>
+</configs>

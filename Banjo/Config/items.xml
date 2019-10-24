@@ -1,0 +1,71 @@
+<configs>
+	<append xpath="/items">
+		<item name="meleeBanjo">
+			<property name="Tags" value="blunt,melee,heavy,sledge,meleeWeapon,perkHeavyMetal,weapon"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="DescriptionKey" value="meleeBanjoDesc"/>
+			<property name="HoldType" value="33"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Banjo.unity3d?BanjoPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="Mwood"/>
+			<property name="CustomIcon" value="BanjoIcon"/>
+			<property name="RepairTools" value="resourceWood"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="EconomicValue" value="300"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="metaldestroy1"/>
+			<property name="CritChance" value="0.35"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="ActionSkillGroup" value="Blunt Weapons"/>
+			<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+			<property name="RepairExpMultiplier" value="1.5"/>
+			
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value="0.15"/>  
+		<property name="Sound_start" value="SlowSwoosh"/>
+		<property name="ToolCategory.harvestingTools" value=".1" param1="1"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value="0.15"/>   
+		<property name="Sound_start" value="SlowSwoosh"/>
+		<property name="ToolCategory.harvestingTools" value=".1" param1="1"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="35"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="38"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="25" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="400,1100" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		        <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		        <passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="oreWoodHarvest"/>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="PlaySound" sound="smash"/>
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.2" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="DismemberChance" operation="base_add" value=".5" tags="secondary"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="55" tags="secondary"/>
+				
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+			        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="55"/>
+			        <requirement name="IsMale" target="self"/>
+		        </triggered_effect>
+		       <triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+			        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="55"/>
+			        <requirement name="IsMale" target="self" invert="true"/>
+		       </triggered_effect>
+			</effect_group>
+		</item>
+	</append>
+</configs>

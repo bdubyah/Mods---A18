@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xml>
+		<ModInfo>
+			<Name value="Banjo"/>
+			<Description value="A melee weapon. A good choice when trying to win Zombie Kill of the Week!"/>
+			<Author value="bdubyah"/>
+			<Version value="1.7"/>
+			<Website value=""/>
+		</ModInfo>
+	</xml>

@@ -1,0 +1,262 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleBoxTruckPlainplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="BoxTruckplain"/>
+			<property name="DescriptionKey" value="vehicleBoxTruckPlainplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/BoxTruck.unity3d?BoxTruckplain.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleBoxTruckPlain"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleBoxTruckHostessplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="BoxTruckhostess"/>
+			<property name="DescriptionKey" value="vehicleBoxTruckHostessplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/BoxTruck.unity3d?BoxTruckhostess.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleBoxTruckHostess"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleGNXchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="GNXchassis"/>
+			<property name="DescriptionKey" value="vehicleGNXchassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleGNXaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="GNXchassis"/>
+			<property name="DescriptionKey" value="vehicleGNXaccessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleGNXBlackplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="GNX"/>
+			<property name="DescriptionKey" value="vehicleGNXBlackplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/GNX.unity3d?GNXblack.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleGNXBlack"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleGNXRedplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="GNXred"/>
+			<property name="DescriptionKey" value="vehicleGNXRedplaceableDesc"/> 
+			<property name="Meshfile" value="#@modfolder:Resources/GNX.unity3d?GNXred.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleGNXRed"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleGolfCartchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="GolfCartchassis"/>
+			<property name="DescriptionKey" value="vehicleGolfCartchassisDesc"/> 
+			<property name="EconomicValue" value="100"/>
+		</item>
+
+		<item name="vehicleGolfCartaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="GolfCartaccessories"/>
+			<property name="DescriptionKey" value="vehicleGolfCartaccessoriesDesc"/> 
+			<property name="EconomicValue" value="100"/>
+		</item>
+
+		<item name="vehicleGolfCartplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="GolfCart"/>
+			<property name="DescriptionKey" value="vehicleGolfCartplaceableDesc"/> 
+			<property name="Meshfile" value="#@modfolder:Resources/GolfCart.unity3d?GolfCart.prefab"/>
+			<property name="EconomicValue" value="1000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleGolfCart"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,5500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="meleeGolfClub">
+			<property name="Tags" value="blunt,melee,heavy,sledge,meleeWeapon,perkHeavyMetal,weapon"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="DescriptionKey" value="meleeGolfClubDesc"/> 
+			<property name="HoldType" value="33"/>
+			<property name="Meshfile" value="#@modfolder:Resources/GolfClub.unity3d?GolfClubprefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="CustomIcon" value="GolfClub"/>
+			<property name="RepairTools" value="resourceForgedIron"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="EconomicValue" value="300"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="metaldestroy1"/>
+			<property name="Weight" value="200"/>
+			<property name="CritChance" value="0.25"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="ActionSkillGroup" value="Blunt Weapons"/>
+			<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+			<property name="RepairExpMultiplier" value="1.5"/>
+			
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value="0.15"/>  
+				<property name="Sound_start" value="SlowSwoosh"/>
+				<property name="ToolCategory.harvestingTools" value=".1" param1="1"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value="0.15"/>   
+				<property name="Sound_start" value="SlowSwoosh"/>
+				<property name="ToolCategory.harvestingTools" value=".1" param1="1"/>
+				<property name="UsePowerAttackAnimation" value="true"/>
+			</property>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="35"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
+			    <passive_effect name="AttacksPerMinute" operation="base_set" value="38"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="700,1100" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		        <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		        <passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.2" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="DismemberChance" operation="base_add" value=".2" tags="secondary"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="45" tags="secondary"/>
+				
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+			        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+			        <requirement name="IsMale" target="self"/>
+		        </triggered_effect>
+		       <triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+			        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="5"/>
+			        <requirement name="IsMale" target="self" invert="true"/>
+		       </triggered_effect>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleMarauderchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Marauderchassis"/>
+			<property name="DescriptionKey" value="vehicleMarauderchassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleMarauderaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Marauderaccessories"/>
+			<property name="DescriptionKey" value="vehicleMarauderaccessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleMarauderplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Marauder"/>
+			<property name="DescriptionKey" value="vehicleMarauderplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Marauder1.unity3d?vehicleMarauder.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleMarauder"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="8500,12500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleMRAPparts">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="MRAPparts"/>
+			<property name="DescriptionKey" value="vehicleMRAPpartsDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleMRAPaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="MRAPaccessories"/>
+			<property name="DescriptionKey" value="vehicleMRAPaccessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleMRAPplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="MRAPrusty"/>
+			<property name="DescriptionKey" value="vehicleMRAPplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MRAP1.unity3d?MRAPrusty.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleMRAP"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="10000,15000" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleWillyJeepplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Willy_Jeep"/>
+			<property name="DescriptionKey" value="vehicleWillyJeepplaceableDesc"/> 
+			<property name="Meshfile" value="#@modfolder:Resources/Willy_Jeep.unity3d?Willy_Jeep.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleWillyJeep"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleWillyJeepToplessplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Willy_Jeep_Topless"/>
+			<property name="DescriptionKey" value="vehicleWillyJeepToplessplaceableDesc"/> 
+			<property name="Meshfile" value="#@modfolder:Resources/Willy_Jeeptopless.unity3d?Willy_Jeeptopless.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleWillyJeepTopless"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+		
+			
+	 </append>
+ </configs>

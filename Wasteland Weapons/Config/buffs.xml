@@ -1,0 +1,62 @@
+<configs>
+	<append xpath="/buffs">
+
+	<buff name="RailSpikeBuff" name_key="Spike" icon="ui_game_symbol_medical" hidden="true">
+		<damage_type value="knockdown"/>
+		<stack_type value="ignore"/>
+		<duration value="4"/>
+		<requirements compare_type="or">
+			<requirement name="NotHasBuff" buff="RailSpikeCooldownBuff"/>
+		</requirements>
+
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_set" value="0" />
+			<passive_effect name="WalkSpeed" operation="perc_set" value="0" />
+			<passive_effect name="CrouchSpeed" operation="perc_set" value="0" />
+			<passive_effect name="JumpStrength" operation="perc_set" value="0" />
+			
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="buffInjuryBleeding,RailSpikeCooldownBuff"/>
+			<triggered_effect trigger="onSelfBuffStart" action="Ragdoll" target="self" duration="2.5"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="RailSpikeCooldownBuff" hidden="true"> <duration value="3"/> <stack_type value="ignore"/> </buff>
+	<!--
+	<buff name="buffNuke" name_key="buffRadiation3Name" description_key="buffRadiation3Desc" tooltip_key="buffRadiation3Tooltip" icon="ui_game_symbol_radiation" icon_color="255,0,0" icon_blink="true">
+		<damage_type value="radiation"/>
+		<stack_type value="ignore"/>
+		<duration value="15"/>
+		<update_rate value="1"/>
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,15" value="1,3"/>
+			
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/Particles1.unity3d?nukeEXP" local_offset="0,-.2,0" parent_transform="Hips"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/Particles1.unity3d?nukeEXP"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/Particles1.unity3d?nukeEXP"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0">
+				<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="1" fade=".7" effect_name="Hot">
+				<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".7" effect_name="Hot">
+				<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="0"/>
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffRadiation3">
+				<requirement name="CVarCompare" cvar="_biomeradiation" operation="LT" value="2.5"/>
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".6" fade="2"/>
+			<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
+		</effect_group>
+	</buff>
+			-->
+	</append>
+</configs>

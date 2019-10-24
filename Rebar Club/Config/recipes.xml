@@ -1,0 +1,11 @@
+<configs>
+	<append xpath="/recipes">
+	
+		<recipe name="meleeRebarClub" count="1" craft_time="60" craft_area="workbench">
+			<ingredient name="resourceConcreteMix" count="15"/>
+			<ingredient name="resourceLeather" count="10"/>
+			<ingredient name="resourceForgedIron" count="40"/>
+		</recipe>
+		
+	</append>
+	</configs>

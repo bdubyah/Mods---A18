@@ -1,0 +1,13 @@
+<configs>
+	<append xpath="/recipes">
+	
+		<recipe name="meleeBanjo" count="1" craft_time="45" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceWood" count="20"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+			<ingredient name="resourceScrapIron" count="20"/>
+		</recipe>
+		
+	</append>
+	</configs>
