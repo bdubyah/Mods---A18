@@ -333,14 +333,14 @@
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
-	<property name="EconomicValue" value="1800"/>
+	<property name="EconomicValue" value="1500"/>
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
 		<property name="Class" value="Launcher"/>
 		<property name="Delay" value="0.8"/>
 		<property name="Range" value="200"/> 
-		<property name="Magazine_items" value="ammoNuke,ammoBowlingball"/>
+		<property name="Magazine_items" value="ammoNuke,ammoNukeAP,ammoBowlingball"/>
 		<property name="Reload_time" value="2"/>
 		<property name="Sound_start" value="m136_fire"/>
 		<property name="Sound_repeat" value=""/>
@@ -349,7 +349,7 @@
 		<property name="Sound_reload" value="m136_reload"/>
 		<property name="Particles_muzzle_fire" value="rocketLauncherFire"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke_m136"/>
-		<property name="ScopeOffset" value="-0.00062,0.088,0.065"/>
+		<property name="ScopeOffset" value="-0,10,10"/>
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 	</property>
@@ -382,7 +382,7 @@
 
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="7"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="7"/>
-		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0.15"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0.1"/>
 		<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="0.8"/>
 		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
 		<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2"/>
@@ -395,10 +395,10 @@
 		
 		<display_value name="dRecoil" value="100" />
 		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2.2"/>
-		<passive_effect name="WeaponHandling" operation="base_set" value="0.6"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value="0.8"/>
 
 		<passive_effect name="DegradationMax" operation="base_set" value="2700"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="270"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="135"/>
 	</effect_group>
 </item>
 
@@ -412,7 +412,7 @@
 	<property name="CustomIcon" value="nuke"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="Stacknumber" value="20"/>
-	<property name="EconomicValue" value="250"/>
+	<property name="EconomicValue" value="500"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	
@@ -427,11 +427,46 @@
 		<property name="LifeTime" value="18"/>
 	</property>
 	<effect_group name="Base Effects" tiered="false">
-		<passive_effect name="BlockDamage" operation="base_set" value="300"/><display_value name="dExDamageBlock" value="500" />
-		<passive_effect name="EntityDamage" operation="base_set" value="750"/><display_value name="dExDamageEntity" value="750" />
-		<passive_effect name="ProjectileVelocity" operation="base_set" value="25"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="400"/><display_value name="dExDamageBlock" value="400" />
+		<passive_effect name="EntityDamage" operation="base_set" value="1250"/><display_value name="dExDamageEntity" value="1250" />
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="28"/>
 		<display_value name="dExRadius" value="15" />
-		<!-- <triggered_effect trigger="onProjectileImpact" action="AddBuff" target="" range="12" buff="buffNuke"/> -->
+		
+		
+		<passive_effect name="ProjectileStickChance" operation="base_set" value="0"/>
+	</effect_group>
+</item>
+
+<item name="ammoNukeAP">
+	<property name="DisplayType" value="ammoLauncher"/>
+	<property name="Meshfile" value="#@modfolder:Resources/Fatman1.unity3d?ammoNuke"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="DescriptionKey" value="ammoNukeAPDesc"/>
+	<property name="CustomIcon" value="nuke"/> <property name="CustomIconTint" value="0,100,0"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="20"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="Explosion.ParticleIndex" value="6"/> 
+		<property name="Explosion.RadiusBlocks" value="10"/> 
+		<property name="Explosion.RadiusEntities" value="13"/> 
+		<property name="Explosion.DamageBonus.water" value="0"/>
+		<property name="Gravity" value="-10"/>
+		<property name="FlyTime" value="0"/>
+		<property name="LifeTime" value="18"/>
+	</property>
+	<effect_group name="Base Effects" tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/><display_value name="dExDamageBlock" value="1" />
+		<passive_effect name="EntityDamage" operation="base_set" value="750"/><display_value name="dExDamageEntity" value="750" />
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="28"/>
+		<display_value name="dExRadius" value="15" />
+		
 		
 		<passive_effect name="ProjectileStickChance" operation="base_set" value="0"/>
 	</effect_group>
@@ -441,13 +476,19 @@
 	<property name="DisplayType" value="ammoLauncher"/>
 	<property name="Meshfile" value="#@modfolder:Resources/Fatman1.unity3d?ammoBowlingball"/>
 	<property name="HoldType" value="45"/>
-	<property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
-	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HandMeshfile" value="#@modfolder:Resources/Fatman1.unity3d?ammoBowlingball"/>
+	<property name="DropMeshfile" value="#@modfolder:Resources/Fatman1.unity3d?ammoBowlingball"/>
 	<property name="DescriptionKey" value="ammoBowlingballDesc"/>
 	<property name="CustomIcon" value="bowlingball"/>
 	<property name="Material" value="Mmetal"/>
+	<property name="IsSticky" value="true"/>
+	<property name="StickyOffset" value="-.3"/>
+	<property name="StickyColliderUp" value="2"/>
+	<property name="StickyColliderRadius" value=".05"/>
+	<property name="StickyColliderLength" value="1.5"/>
+	<property name="DropScale" value="1.5"/>
 	<property name="Stacknumber" value="20"/> 
-	<property name="EconomicValue" value="250"/>
+	<property name="EconomicValue" value="50"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	
@@ -459,13 +500,14 @@
 		<property name="LifeTime" value="18"/>
 	</property>
 	<effect_group name="Base Effects" tiered="false">
-		<passive_effect name="BlockDamage" operation="base_set" value="500"/><display_value name="dExDamageBlock" value="500" />
-		<passive_effect name="EntityDamage" operation="base_set" value="750"/><display_value name="dExDamageEntity" value="750" />
+		<passive_effect name="BlockDamage" operation="base_set" value="200"/><display_value name="dExDamageBlock" value="200" />
+		<passive_effect name="EntityDamage" operation="base_set" value="250"/><display_value name="dExDamageEntity" value="250" />
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="30"/>
 		<display_value name="dExRadius" value="15" />
-		<passive_effect name="ProjectileStickChance" operation="base_set" value="0"/>
-		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="otherAOE" range="1.4" buff="buffInjuryKnockdown1">
-				    <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="100"/>
+		<passive_effect name="ProjectileStickChance" operation="base_set" value="1"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryCrippled01"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="otherAOE" range="1.4" buff="buffInjuryKnockdown01">
+				    <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="75"/>
 			    </triggered_effect>
 	</effect_group>
 </item>
@@ -495,7 +537,7 @@
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 	<property name="LightValue" value="0.45"/>
-	<property name="EconomicValue" value="300"/>
+	<property name="EconomicValue" value="200"/>
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -536,7 +578,7 @@
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.05"/>
 		<passive_effect name="ModSlots" operation="base_set" value="2,3,3,3,3,3" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="10" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> 
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/>
@@ -588,7 +630,7 @@
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 	<property name="LightValue" value="0.45"/>
-	<property name="EconomicValue" value="400"/>
+	<property name="EconomicValue" value="200"/>
 	<property name="ShowQuality" value="true"/>
 
 	<property class="Action0">
@@ -630,7 +672,7 @@
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".53"/> 
 		<passive_effect name="ModSlots" operation="base_set" value="2,3,3,3,3,3" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="10" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> 
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/>

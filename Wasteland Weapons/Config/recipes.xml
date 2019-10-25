@@ -77,6 +77,20 @@
 		<ingredient name="resourceMechanicalParts" count="5"/>
 		<ingredient name="resourceMetalPipe" count="1"/>
 	</recipe>
+	
+	<recipe name="ammoBowlingball" count="1" craft_area="workbench" craft_time="60">
+		<ingredient name="resourceOil" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="10"/>
+		<ingredient name="resourcePaint" count="5"/>
+		<ingredient name="resourceFishingWeight" count="3"/>
+	</recipe>
+	
+	<recipe name="ammoNukeAP" count="1" craft_area="workbench" craft_time="25">
+		<ingredient name="ammoNuke" count="1"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceForgedIron" count="2"/>
+		<ingredient name="resourceBuckshot" count="10"/>
+	</recipe>
 
 </append>
 </configs>

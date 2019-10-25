@@ -15,9 +15,29 @@
 	<item group="LegendaryPipeWeapons" prob=".002"/>
 </append>
 
+<!-- misc storage, cardboard boxes-->
+<append xpath="/lootcontainers/lootcontainer[@id='15']">
+	<item name="ammoBowlingball" count="1,2" prob=".07"/>
+</append>
+
+<!-- cars-->
+<append xpath="/lootcontainers/lootcontainer[@id='24']">
+	<item name="ammoBowlingball" count="1,2" prob=".05"/>
+</append>
+
+<!-- garage stuff, tools, etc -->
+<append xpath="/lootcontainers/lootcontainer[@id='24']">
+	<item name="ammoBowlingball" count="1,2" prob=".1"/>
+</append>
+
 <!-- metal desk -->
 <append xpath="/lootcontainers/lootcontainer[@id='24']">
 	<item group="LegendaryPipeWeapons" prob=".002"/>
+</append>
+
+<!-- military munitions ammo box -->
+<append xpath="/lootcontainers/lootcontainer[@id='40']">
+	<item name="ammoNuke" count="1" prob=".2"/>
 </append>
 
 <!-- cntLootChestHero, fancy chest -->
@@ -30,14 +50,26 @@
 	<item group="LegendaryPipeWeapons" prob=".009"/>
 </append>
 
+<!-- lockers -->
+<append xpath="/lootcontainers/lootcontainer[@id='43']">
+	<item name="ammoBowlingball" count="1,2" prob=".2"/>
+</append>
+
 <!-- Treasure chest -->
 <append xpath="/lootcontainers/lootcontainer[@id='61']">
 	<item group="LegendaryPipeWeapons" prob=".007"/>
 </append>
 
+<!-- army truck-->
+<append xpath="/lootcontainers/lootcontainer[@id='83']">
+	<item name="ammoNuke" count="1,3" prob="0.06"/>
+	<item name="gunFatMan" prob="0.05"/>
+</append>
+
 <!-- cntLootCrateHero, Hero / Hidden Stash Cardboard Loot-->
 <append xpath="/lootcontainers/lootcontainer[@id='95']">
 	<item group="LegendaryPipeWeapons" prob=".007"/>
+	<item name="gunFatMan" prob="0.05"/>
 </append>
 
 <!-- cntWeaponsBagSmall -->
@@ -55,12 +87,31 @@
 	<item group="LegendaryPipeWeapons" prob=".007"/>
 </append>
 
+<!-- cntHardenedChestSecure, big, fancy chest -->
+<append xpath="/lootcontainers/lootcontainer[@id='121']">
+	<item group="LegendaryPipeWeapons" prob=".007"/>
+	<item name="gunFatMan" prob="0.04"/>
+	<item name="ammoNuke" count="1,4" prob="0.06"/>
+</append>
+
+<!-- cntBuriedWeaponChest -->
+<append xpath="/lootcontainers/lootcontainer[@id='122']">
+	<item group="LegendaryPipeWeapons" prob=".007"/>
+</append>
+
+<!-- closet hanger, cntModularClosetClosed -->
+<append xpath="/lootcontainers/lootcontainer[@id='123']">
+	<item name="ammoBowlingball" count="1,2" prob=".05"/>
+</append>
 
 
-<!--Oil Filter mod-->
+
+
+<!-- **********Oil Filter mod*********** -->
+
 <!-- cars-->
 <append xpath="/lootcontainers/lootcontainer[@id='19']">
-	<item name="modOilFilterSuppressor" prob="0.1"/>
+	<item name="modOilFilterSuppressor" prob="0.08"/>
 </append>
 
 <!-- garage stuff, tools, etc -->
@@ -70,17 +121,17 @@
 
 <!-- army truck-->
 <append xpath="/lootcontainers/lootcontainer[@id='83']">
-	<item name="modOilFilterSuppressor" prob="0.3"/>
+	<item name="modOilFilterSuppressor" prob="0.08"/>
 </append>
 
 <!-- car parts shipping crate -->
 <append xpath="/lootcontainers/lootcontainer[@id='90']">
-	<item name="modOilFilterSuppressor" prob="0.3"/>
+	<item name="modOilFilterSuppressor" prob="0.08"/>
 </append>
 
 <!-- cntToolBoxClosed, cntRollingToolBoxClosed -->
 <append xpath="/lootcontainers/lootcontainer[@id='124']">
-	<item name="modOilFilterSuppressor" prob="0.15"/>
+	<item name="modOilFilterSuppressor" prob="0.1"/>
 </append>
 
 
