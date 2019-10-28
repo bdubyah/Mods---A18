@@ -1,0 +1,25 @@
+<configs>
+
+	<insertBefore xpath="/traders/trader_item_groups/trader_item_group[@name='modMeleeT1']">
+		<trader_item_group name="NukaQuartz">
+			<item name="drinkNukaQuartz"/>
+		</trader_item_group>
+		<trader_item_group name="NukaQuantum">
+			<item name="drinkNukaQuantum"/>
+		</trader_item_group>
+		<trader_item_group name="NukaCola">
+			<item name="drinkNukaCola"/>
+		</trader_item_group>
+		<trader_item_group name="NukaCherry">
+			<item name="drinkNukaCherry"/>
+		</trader_item_group>
+	</insertBefore>	
+			
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='foodVending']">
+		<item group="NukaQuartz" prob=".009"/>
+		<item group="NukaQuantum" prob=".006"/>
+		<item group="NukaCherry" prob=".01"/>
+		<item group="NukaCola" prob=".04"/>
+	</append>
+	
+</configs>
