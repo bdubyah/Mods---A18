@@ -1,4 +1,4 @@
-Install the "GNX" folder into your 7 days to Die "Mods" folder.
+Install the "UAZ452" folder into your 7 days to Die "Mods" folder.
 
 In order to see the correct item and vehicle names, you'll need to open the Localization.txt file included in this mod and copy and paste its contents into you game's Localization file. 
 
