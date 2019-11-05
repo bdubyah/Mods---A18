@@ -2,9 +2,9 @@
 	<xml>
 		<ModInfo>
 			<Name value="NukaColas"/>
-			<Description value="Adds multiple refrshing beverages to quench your thirst while you roam the wastelands!"/>
+			<Description value="Adds multiple refreshing beverages to quench your thirst while you roam the wastelands!"/>
 			<Author value="bdubyah"/>
-			<Version value="1.4"/>
+			<Version value="1.5"/>
 			<Website value=""/>
 		</ModInfo>
 	</xml>
