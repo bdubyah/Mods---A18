@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/recipes">
 	
-		<recipe name="vehicleBoxTruckPlainplaceable" count="1" craft_area="workbench" craft_time="30">
+		<recipe name="vehicleBoxTruckPlainplaceable" count="1" craft_area="workbench" craft_time="30" tags="workbenchCrafting">
 			<ingredient name="vehicleWheels" count="6"/>
 			<ingredient name="vehicle4x4TruckChassis" count="1"/>
 			<ingredient name="vehicle4x4TruckAccessories" count="1"/>
@@ -9,7 +9,7 @@
 	        <ingredient name="carBattery" count="2"/>
 		</recipe>
 		
-		<recipe name="vehicleBoxTruckHostessplaceable" count="1" craft_area="workbench" craft_time="30">
+		<recipe name="vehicleBoxTruckHostessplaceable" count="1" craft_area="workbench" craft_time="30" tags="workbenchCrafting">
 			<ingredient name="vehicleWheels" count="6"/>
 			<ingredient name="vehicle4x4TruckChassis" count="1"/>
 			<ingredient name="vehicle4x4TruckAccessories" count="1"/>

@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/recipes">
 	
-		<recipe name="vehicleGolfCartchassis" count="1" craft_area="workbench" tags="learnable">
+		<recipe name="vehicleGolfCartchassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceLeather" count="20"/>
 			<ingredient name="resourceElectricParts" count="20"/>
 			<ingredient name="resourceForgedIron" count="30"/>
@@ -9,14 +9,14 @@
 			<ingredient name="resourceScrapPolymers" count="20"/>
 		</recipe>
 		
-		<recipe name="vehicleGolfCartaccessories" count="1" craft_area="workbench" tags="learnable">
+		<recipe name="vehicleGolfCartaccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceForgedIron" count="20"/>
 	        <ingredient name="resourceMetalPipe" count="20"/>
 			<ingredient name="resourceScrapPolymers" count="25"/>
 			<ingredient name="resourceDuctTape" count="10"/>
 		</recipe>
 		
-		<recipe name="vehicleGolfCartplaceable" count="1" craft_area="workbench" craft_time="240">
+		<recipe name="vehicleGolfCartplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
 			<ingredient name="vehicleWheels" count="4"/>
 			<ingredient name="vehicleGolfCartchassis" count="1"/>
 			<ingredient name="vehicleGolfCartaccessories" count="1"/>
@@ -24,7 +24,7 @@
 	        <ingredient name="carBattery" count="1"/>
 		</recipe>
 		
-		<recipe name="meleeGolfClub" count="1">
+		<recipe name="meleeGolfClub" count="1" craft_time="30" tags="workbenchCrafting">
 			<ingredient name="resourceForgedIron" count="10"/>
 			<ingredient name="resourceScrapPolymers" count="4"/>
 			<ingredient name="resourceLeather" count="10"/>

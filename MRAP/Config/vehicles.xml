@@ -6,8 +6,8 @@
 
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="5000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorqueMinQ" value="4000"/>
+			<property name="motorTorqueMaxQ" value="5000"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>

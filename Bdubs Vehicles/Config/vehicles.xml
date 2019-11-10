@@ -343,7 +343,7 @@
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
 			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorqueMaxQ" value="5000"/>
 			<property name="brakeTorque" value="6000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -811,7 +811,7 @@
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
 			<property name="motorTorqueMinQ" value="4000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorqueMaxQ" value="5000"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -972,8 +972,8 @@
 
 			<property name="cameraDistance" value="7.5, 7"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="5000"/>
-			<property name="motorTorqueMaxQ" value="6000"/>
+			<property name="motorTorqueMinQ" value="4000"/>
+			<property name="motorTorqueMaxQ" value="5000"/>
 			<property name="brakeTorque" value="2000"/>
 			<property name="upAngleMax" value="70"/>
 			<property name="upForce" value="1"/>
@@ -989,10 +989,6 @@
 			<property name="velocityMax" value="13, 13"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 			<property name="wheelPtlScale" value="1"/>
-			<property class="RepairItems">
-			<property name="resourceRepairKit" value="15"/>
-			</property>
-
 			<property name="hornSound" value="vehicle/minibike/minibike_horn"/>
 
 			<property class="battery">
@@ -1676,6 +1672,7 @@
 
 		</vehicle>
 		
-	 </append>
+		
+	</append>
 	  
 </configs>
