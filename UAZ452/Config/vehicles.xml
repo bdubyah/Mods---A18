@@ -104,53 +104,40 @@
 				<property name="IKHandRRotation" value="40.55, 13.433, -49.88"/>
 			</property>
 			
-			<property class="pedals">
-			<property name="class" value="Pedals"/>
-			<property name="slot_type" value="pedals"/>
-			<property name="transform" value="Origin/pedalJoint"/>
-			<property name="pedalLPosition" value="0, 0, 0"/>
-			<property name="pedalRPosition" value="0, 0, 0"/>
-			<property name="IKFootLPosition" value="-.44, .1, -.05"/>
-			<property name="IKFootLRotation" value="0, 0, 0"/>
-			<property name="IKFootRPosition" value="-.4, .1, -.05"/>
-			<property name="IKFootRRotation" value="0, 0, 0"/>
-			<property name="pedalSound" value=""/>
-			<property name="staminaDrain" value="0,0"/>
-		</property>
 
 			<property class="seat0">
-				<property name="position" value="-.43, .44, 1.78"/>
-				<property name="rotation" value="-30, 0, 0"/>
+				<property name="position" value="-.43, .6, 1.82"/>
+				<property name="rotation" value="-38, 0, 0"/>
 				<property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
 			</property>
 
 			<property class="seat1">
-				<property name="position" value=".43, .44, 1.78"/>
-				<property name="rotation" value="-75, 0, 0"/>
+				<property name="position" value=".43, .6, 1.82"/>
+				<property name="rotation" value="-38, 0, 0"/>
 				<property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0"/>
 			</property>
 			
 			<property class="seat2">
-				<property name="position" value="-.42, .45, .6"/>
-				<property name="rotation" value="-30, 0, 0"/>
+				<property name="position" value="-.42, .6, .64"/>
+				<property name="rotation" value="-38, 0, 0"/>
 				<property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
 			</property>
 			
 			<property class="seat3">
-				<property name="position" value=".42, .45, .6"/>
-				<property name="rotation" value="-75, 0, 0"/>
+				<property name="position" value=".42, .6, .64"/>
+				<property name="rotation" value="-38, 0, 0"/>
 				<property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0"/>
 			</property>
 			
 			<property class="seat4">
-				<property name="position" value="-.42, .45, -.7"/>
-				<property name="rotation" value="-30, 0, 0"/>
+				<property name="position" value="-.42, .6, -.66"/>
+				<property name="rotation" value="-38, 0, 0"/>
 				<property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
 			</property>
 			
 			<property class="seat5">
-				<property name="position" value=".42, .45, -.7"/>
-				<property name="rotation" value="-75, 0, 0"/>
+				<property name="position" value=".42, .6, -.66"/>
+				<property name="rotation" value="-38, 0, 0"/>
 				<property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0"/>
 			</property>
 			
