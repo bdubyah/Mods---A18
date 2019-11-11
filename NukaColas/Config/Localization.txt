@@ -1,3 +1,4 @@
+Key,Source,Context,Changes,English
 drinkNukaCola,items,Food,New,Nuka Cola,,,,,
 drinkNukaColaDesc,items,Food,New,The wastelander's favorite beverage! Helps recover stamina quicker and restore a small amount of max health and stamina. The small trace of radiation also allow for a slight movement speed boost for a limited time!,,,,,
 drinkNukaCherry,items,Food,New,Nuka Cherry,,,,,

@@ -1,3 +1,4 @@
+Key,Source,Context,Changes,English
 vehicleBoxTruckPlain,vehicles,vehicle,new,Box Truck,,,,,
 vehicleBoxTruckPlainplaceable,vehicles,item,EnChanged,Box Truck,,,,,
 vehicleBoxTruckPlainplaceableDesc,vehicles,item,EnChanged,An old Box Truck.,,,,,

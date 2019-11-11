@@ -1,3 +1,4 @@
+Key,Source,Context,Changes,English
 vehicleGolfCart,vehicles,vehicle,new,Golf Cart,,,,,
 vehicleGolfCartchassis,items,Part,EnChanged,Golf Cart Chassis,,,,,
 vehicleGolfCartchassisDesc,items,Part,EnChanged,Parts needed to craft the Golf Cart. Grease Monkey level 2 required.,,,,,

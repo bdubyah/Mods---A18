@@ -115,7 +115,7 @@
 		<effect_group tiered="false" name="Base Effects"> 
 			<passive_effect name="MaxRange" operation="base_add" value="10"/>
 			<passive_effect name="DamageFalloffRange" operation="base_add" value="3"/>
-			<passive_effect name="DismemberChance" operation="perc_subtract" value=".25" tags="leg,arm"/>
+			<passive_effect name="DismemberChance" operation="perc_add" value=".25" tags="leg,arm"/>
 			<passive_effect name="SpreadDegreesVertical" operation="perc_subtract" value=".22"/>
 			<passive_effect name="SpreadDegreesHorizontal" operation="perc_subtract" value=".22"/>
 			

@@ -1,3 +1,4 @@
+Key,Source,Context,Changes,English
 gunPipePistol,items,Gun,New,Pipe Pistol,,,,,
 gunPipePistolDesc,items,Gun,New,Weak homemade pistol. Uses 9mm. Low durability. Can break and disappear!,,,,,
 gunPipeRifle,items,Gun,New,Pipe Rifle,,,,,

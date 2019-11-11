@@ -1,3 +1,4 @@
+Key,Source,Context,Changes,English
 vehiclePickupchassis,items,Part,EnChanged,Pickup Chassis,,,,,
 vehiclePickupchassisDesc,items,Part,EnChanged,Parts needed to craft the Pickup. Grease Monkey level 4 required.,,,,,
 vehiclePickupaccessories,items,Part,EnChanged,Pickup Accessories,,,,,
