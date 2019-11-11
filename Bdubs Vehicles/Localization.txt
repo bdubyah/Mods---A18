@@ -1,10 +1,10 @@
 vehicleBoxTruckPlain,vehicles,vehicle,new,Box Truck,,,,,
 vehicleBoxTruckPlainplaceable,vehicles,item,EnChanged,Box Truck,,,,,
-
 vehicleBoxTruckPlainplaceableDesc,vehicles,item,EnChanged,An old Box Truck.,,,,,
 vehicleBoxTruckHostess,vehicles,vehicle,new,Hostess Box Truck,,,,,
 vehicleBoxTruckHostessplaceable,vehicles,item,EnChanged,Hostess Box Truck,,,,,
 vehicleBoxTruckHostessplaceableDesc,vehicles,item,EnChanged,Tallahassee's favorite!,,,,,
+
 vehicleGNXchassis,items,Part,EnChanged,GNX Chassis,,,,,
 vehicleGNXchassisDesc,items,Part,EnChanged,Parts needed to craft the GNX. Grease Monkey level 4 required.,,,,,
 vehicleGNXaccessories,items,Part,EnChanged,GNX Accessories,,,,,
@@ -15,6 +15,7 @@ vehicleGNXBlackplaceableDesc,vehicles,item,EnChanged,Cruise the wasteland in sty
 vehicleGNXRed,vehicles,vehicle,new,GNX Red,,,,,
 vehicleGNXRedplaceable,vehicles,item,EnChanged,GNX Red,,,,,
 vehicleGNXRedplaceableDesc,vehicles,item,EnChanged,Cruise the wasteland in style!,,,,,
+
 vehicleGolfCart,vehicles,vehicle,new,Golf Cart,,,,,
 vehicleGolfCartchassis,items,Part,EnChanged,Golf Cart Chassis,,,,,
 vehicleGolfCartchassisDesc,items,Part,EnChanged,Parts needed to craft the Golf Cart. Grease Monkey level 2 required.,,,,,
@@ -24,22 +25,22 @@ vehicleGolfCartplaceable,vehicles,item,EnChanged,Gold Cart,,,,,
 vehicleGolfCartplaceableDesc,vehicles,item,EnChanged,It might not be much but it's better than walking!,,,,,
 meleeGolfClub,items,Melee,KgNone,Golf Club,,,,,
 meleeGolfClubDesc,items,Melee,KgNone,No golf balls? There's always plenty of zombies to practice that swing on!,,,,,
+
 vehicleWillyJeep,vehicles,vehicle,new,Willy Jeep,,,,,
 vehicleWillyJeepplaceable,vehicles,item,EnChanged,Willy Jeep,,,,,
 vehicleWillyJeepplaceableDesc,vehicles,item,EnChanged,If it survived WW2 surely it can handle this!,,,,,
 vehicleWillyJeepTopless,vehicles,vehicle,new,Willy Jeep Topless,,,,,
 vehicleWillyJeepToplessplaceable,vehicles,item,EnChanged,Willy Jeep Topless,,,,,
 vehicleWillyJeepToplessplaceableDesc,vehicles,item,EnChanged,Now with even more wind-in-hair action!,,,,,
+
 vehicleMRAP,vehicles,vehicle,new,MRAP,,,,,
 vehicleMRAPplaceable,vehicles,item,EnChanged,MRAP,,,,,
 vehicleMRAPplaceableDesc,vehicles,item,EnChanged,A MRAP military vehicle. What else could you want?,,,,,
-
 vehicleMRAPaccessories,items,Part,EnChanged,MRAP Accessories,,,,,
 vehicleMRAPaccessoriesDesc,items,Part,EnChanged,Accessories needed to craft the MRAP.,,,,,
-
 vehicleMRAPparts,items,Part,EnChanged,MRAP Parts,,,,,
-
 vehicleMRAPpartsDesc,items,Part,EnChanged,Parts needed to craft the MRAP.,,,,,
+
 vehicleMarauder,vehicles,vehicle,new,Marauder,,,,,
 vehicleMarauderplaceable,vehicles,item,EnChanged,Marauder,,,,,
 vehicleMarauderplaceableDesc,vehicles,item,EnChanged,Those zombies will be jealous of this ride!,,,,,
@@ -53,3 +54,11 @@ vehicleUAZ452chassisDesc,items,Part,EnChanged,Parts needed to craft the UAZ 452.
 vehicleUAZ452,vehicles,vehicle,new,UAZ 452,,,,,
 vehicleUAZ452placeable,vehicles,item,EnChanged,UAZ 452,,,,,
 vehicleUAZ452placeableDesc,vehicles,item,EnChanged,Blend right in with the apocalypse!,,,,,
+
+vehiclePickupchassis,items,Part,EnChanged,Pickup Chassis,,,,,
+vehiclePickupchassisDesc,items,Part,EnChanged,Parts needed to craft the Pickup. Grease Monkey level 4 required.,,,,,
+vehiclePickupaccessories,items,Part,EnChanged,Pickup Accessories,,,,,
+vehiclePickupaccessoriesDesc,items,Part,EnChanged,Parts needed to craft the Pickup.,,,,,
+vehiclePickup,vehicles,vehicle,new,Pickup,,,,,
+vehiclePickupplaceable,vehicles,item,EnChanged,Pickup,,,,,
+vehiclePickupplaceableDesc,vehicles,item,EnChanged,Make those zeds jealous with this stylish truck!,,,,,

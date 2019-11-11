@@ -6,6 +6,7 @@ https://github.com/bdubyah/Mods---A18/tree/master/Golf%20Cart
 https://github.com/bdubyah/Mods---A18/tree/master/Marauder
 https://github.com/bdubyah/Mods---A18/tree/master/MRAP
 https://github.com/bdubyah/Mods---A18/tree/master/NukaColas
+https://github.com/bdubyah/Mods---A18/tree/master/Pickup
 https://github.com/bdubyah/Mods---A18/tree/master/Rebar%20Club
 https://github.com/bdubyah/Mods---A18/tree/master/Willy%20Jeep
 https://github.com/bdubyah/Mods---A18/tree/master/Wasteland%20Weapons
