@@ -1,0 +1,34 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="vehicleNovachassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Novachassis"/>
+			<property name="DescriptionKey" value="vehicleNovachassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleNovaaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Novaaccessories"/>
+			<property name="DescriptionKey" value="vehicleNovaaccessoriesDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleNovaplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Nova"/>
+			<property name="DescriptionKey" value="vehicleNovaplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Nova1.unity3d?Nova.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleNova"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="3500,7500" tier="1,6"/>
+			</effect_group>
+		</item>
+		
+	 </append>
+ </configs>
