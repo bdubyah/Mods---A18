@@ -24,6 +24,22 @@
 			<ingredient name="smallEngine" count="1"/>
 	        <ingredient name="carBattery" count="1"/>
 		</recipe>
+		
+		<recipe name="vehicleNovaredplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleNovaaccessories" count="1"/>
+			<ingredient name="vehicleNovachassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
+		
+		<recipe name="vehicleNovablackplaceable" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleNovaaccessories" count="1"/>
+			<ingredient name="vehicleNovachassis" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+	        <ingredient name="carBattery" count="1"/>
+		</recipe>
 						
 	</append>
  </configs>
