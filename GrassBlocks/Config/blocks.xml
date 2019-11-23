@@ -16,10 +16,8 @@
 			<property name="MaxDamage" value="500"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Stacknumber" value="250"/>
-			<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>
-			<drop event="Harvest" name="resourceMetalPipe" count="1,4" tag="salvageHarvest"/>
-			<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="salvageHarvest"/>
-			<drop event="Destroy" name="resourceForgedSteel" count="1,4"/>
+			<property class="RepairItems"> <property name="resourceClayLump" value="10"/> </property>
+			
 			<property name="Group" value="Basics,Building"/>
 			<property name="DescriptionKey" value="torchGroupDesc"/>
 			<property name="FilterTags" value="fdecor,felectrical"/>
@@ -40,10 +38,8 @@
 			<property name="MaxDamage" value="500"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Stacknumber" value="250"/>
-			<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>
-			<drop event="Harvest" name="resourceMetalPipe" count="1,4" tag="salvageHarvest"/>
-			<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="salvageHarvest"/>
-			<drop event="Destroy" name="resourceForgedSteel" count="1,4"/>
+			<property class="RepairItems"> <property name="resourceClayLump" value="10"/> </property>
+			
 			<property name="Group" value="Basics,Building"/>
 			<property name="DescriptionKey" value="torchGroupDesc"/>
 			<property name="FilterTags" value="fdecor,felectrical"/>
@@ -64,10 +60,8 @@
 			<property name="MaxDamage" value="500"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Stacknumber" value="250"/>
-			<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>
-			<drop event="Harvest" name="resourceMetalPipe" count="1,4" tag="salvageHarvest"/>
-			<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="salvageHarvest"/>
-			<drop event="Destroy" name="resourceForgedSteel" count="1,4"/>
+			<property class="RepairItems"> <property name="resourceClayLump" value="10"/> </property>
+			
 			<property name="Group" value="Basics,Building"/>
 			<property name="DescriptionKey" value="torchGroupDesc"/>
 			<property name="FilterTags" value="fdecor,felectrical"/>
@@ -88,10 +82,8 @@
 			<property name="MaxDamage" value="500"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Stacknumber" value="250"/>
-			<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>
-			<drop event="Harvest" name="resourceMetalPipe" count="1,4" tag="salvageHarvest"/>
-			<drop event="Harvest" name="resourceForgedSteel" count="1,5" tag="salvageHarvest"/>
-			<drop event="Destroy" name="resourceForgedSteel" count="1,4"/>
+			<property class="RepairItems"> <property name="resourceClayLump" value="10"/> </property>
+			
 			<property name="Group" value="Basics,Building"/>
 			<property name="DescriptionKey" value="torchGroupDesc"/>
 			<property name="FilterTags" value="fdecor,felectrical"/>
