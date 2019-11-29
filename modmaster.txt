@@ -6,6 +6,7 @@ https://github.com/bdubyah/Mods---A18/tree/master/GNX
 https://github.com/bdubyah/Mods---A18/tree/master/Golf%20Cart
 https://github.com/bdubyah/Mods---A18/tree/master/GrassBlocks
 https://github.com/bdubyah/Mods---A18/tree/master/Marauder
+https://github.com/bdubyah/Mods---A18/tree/master/MD-500
 https://github.com/bdubyah/Mods---A18/tree/master/MRAP
 https://github.com/bdubyah/Mods---A18/tree/master/Nova
 https://github.com/bdubyah/Mods---A18/tree/master/NukaColas
