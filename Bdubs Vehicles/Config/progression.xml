@@ -2,6 +2,6 @@
 
 	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='2,5']/@tags">,vehicleGolfCartaccessories,vehicleGolfCartchassis</append>
 	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='4,5']/@tags">,vehicleWorkTruckchassis,vehicleWorkTruckaccessories,vehicleNovachassis,vehicleNovaaccessories,vehiclePickupchassis,vehiclePickupaccessories,vehicleGNXaccessories,vehicleGNXchassis,vehicleUAZ452chassis</append>
-	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='5']/@tags">,vehicleBRDM2chassis,vehicleBRDM2accessories,vehicleMRAPparts,vehicleMRAPaccessories,vehicleMarauderchassis,vehicleMarauderaccessories</append>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='5']/@tags">,vehicleMD500chassis,vehicleMD500accessories,vehicleBRDM2chassis,vehicleBRDM2accessories,vehicleMRAPparts,vehicleMRAPaccessories,vehicleMarauderchassis,vehicleMarauderaccessories</append>
 	
  </configs>
