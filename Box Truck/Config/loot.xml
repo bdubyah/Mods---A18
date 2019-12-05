@@ -2,7 +2,7 @@
 
 <insertAfter xpath="/lootcontainers/lootcontainer[@id='124']">
 
-	<lootcontainer id="133" count="0" size="10,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+	<lootcontainer id="931" count="0" size="10,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
 	</lootcontainer>
 	
 </insertAfter>
