@@ -106,3 +106,12 @@ vehicleMD500accessoriesDesc,items,Part,EnChanged,Parts needed to craft the MD-50
 vehicleMD500,vehicles,vehicle,new,MD-500,,,,,
 vehicleMD500placeable,vehicles,item,EnChanged,MD-500,,,,,
 vehicleMD500placeableDesc,vehicles,item,EnChanged,They can't kill you if they can't hit you!,,,,,
+
+vehicleDusterchassis,items,Part,EnChanged,Duster Chassis,,,,,
+vehicleDusterchassisDesc,items,Part,EnChanged,Parts needed to craft the Duster. Grease Monkey level 5 required.,,,,,
+vehicleDusteraccessories,items,Part,EnChanged,Duster Accessories,,,,,
+vehicleDusteraccessoriesDesc,items,Part,EnChanged,Parts needed to craft the Duster.,,,,,
+vehicleDuster,vehicles,vehicle,new,Duster,,,,,
+vehicleDusterplaceable,vehicles,item,EnChanged,Duster,,,,,
+vehicleDusterplaceableDesc,vehicles,item,EnChanged,It looks like it should fly...,,,,,
+

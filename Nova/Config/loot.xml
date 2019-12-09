@@ -1,0 +1,17 @@
+<configs>
+
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+
+		<lootgroup name="Novagroup">
+			<item name="vehicleNovachassis"/>
+			<item name="vehicleNovaaccessories"/>
+		</lootgroup>
+	
+	</insertBefore>
+
+
+	<append xpath="/lootcontainers/lootgroup[@name='vehicleParts']">
+		<item group="Novagroup" loot_prob_template="probTemplate0.65"/>
+	</append>
+
+</configs>

@@ -1,16 +1,91 @@
 <configs>
 
-<insertAfter xpath="/lootcontainers/lootcontainer[@id='124']">
+	<insertAfter xpath="/lootcontainers/lootcontainer[@id='124']">
 
-	<lootcontainer id="931" count="0" size="10,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
-	</lootcontainer>
+		<lootcontainer id="931" count="0" size="10,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+		
+		<lootcontainer id="932" count="0" size="10,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+		
+		<lootcontainer id="933" count="0" size="10,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+		</lootcontainer>
+		
+	</insertAfter>
 	
-	<lootcontainer id="932" count="0" size="10,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
-	</lootcontainer>
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+
+		<lootgroup name="WorkTruckgroup">
+			<item name="vehicleWorkTruckchassis"/>
+			<item name="vehicleWorkTruckaccessories"/>
+		</lootgroup>
+		
+		<lootgroup name="UAZ452group">
+			<item name="vehicleUAZ452chassis"/>
+		</lootgroup>
+		
+		<lootgroup name="Novagroup">
+			<item name="vehicleNovachassis"/>
+			<item name="vehicleNovaaccessories"/>
+		</lootgroup>
+		
+		<lootgroup name="MRAPgroup">
+			<item name="vehicleMRAPparts"/>
+			<item name="vehicleMRAPaccessories"/>
+		</lootgroup>
+		
+		<lootgroup name="MD500group">
+			<item name="vehicleMD500chassis"/>
+			<item name="vehicleMD500accessories"/>
+		</lootgroup>
+		
+		<lootgroup name="Maraudergroup">
+			<item name="vehicleMarauderchassis"/>
+			<item name="vehicleMarauderaccessories"/>
+		</lootgroup>
+		
+		<lootgroup name="GolfCartgroup">
+			<item name="vehicleGolfCartchassis"/>
+			<item name="vehicleGolfCartaccessories"/>
+		</lootgroup>
+		
+		<lootgroup name="GNXgroup">
+			<item name="vehicleGNXchassis"/>
+			<item name="vehicleGNXaccessories"/>
+		</lootgroup>
+		
+		<lootgroup name="BRDM2group">
+			<item name="vehicleBRDM2chassis"/>
+			<item name="vehicleBRDM2accessories"/>
+		</lootgroup>
+		
+		<lootgroup name="Pickupgroup">
+			<item name="vehiclePickupchassis"/>
+			<item name="vehiclePickupaccessories"/>
+		</lootgroup>
+		
+		<lootgroup name="Dustergroup">
+			<item name="vehicleDusterchassis"/>
+			<item name="vehicleDusteraccessories"/>
+		</lootgroup>
 	
-	<lootcontainer id="933" count="0" size="10,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
-	</lootcontainer>
-	
-</insertAfter>
+	</insertBefore>
+
+
+	<append xpath="/lootcontainers/lootgroup[@name='vehicleParts']">
+		<item group="WorkTruckgroup" loot_prob_template="probTemplate0.65"/>
+		<item group="UAZ452group" loot_prob_template="probTemplate0.65"/>
+		<item group="Novagroup" loot_prob_template="probTemplate0.65"/>
+		<item group="MRAPgroup" loot_prob_template="probTemplate0.65"/>
+		<item group="MD500group" loot_prob_template="probTemplate0.65"/>
+		<item group="Maraudergroup" loot_prob_template="probTemplate0.65"/>
+		<item group="GolfCartgroup" loot_prob_template="probTemplate0.65"/>
+		<item group="GNXgroup" loot_prob_template="probTemplate0.45"/>
+		<item group="Pickupgroup" loot_prob_template="probTemplate0.45"/>
+		<item group="BRDM2group" loot_prob_template="probTemplate0.45"/>
+		<item group="Dustergroup" loot_prob_template="probTemplate0.45"/>
+	</append>
+
+
 
 </configs>
