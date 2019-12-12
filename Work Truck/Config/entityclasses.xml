@@ -18,7 +18,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="WorkTruckUIicon"/>
 		</entity_class>
 		
 	 </append>

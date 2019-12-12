@@ -18,7 +18,7 @@
 			<property name="Explosion.EntityDamage" value="30"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_gyrocopter"/>
+			<property name="MapIcon" value="DusterUIicon"/>
 		</entity_class>
 				
 	 </append>

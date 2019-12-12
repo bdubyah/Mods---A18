@@ -18,7 +18,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="BRDM2UIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleBRDM2desert">
@@ -38,7 +38,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="BRDM2UIicon"/>
 		</entity_class>
 
 		<entity_class name="vehicleBoxTruckPlain">
@@ -58,7 +58,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="BoxTruckUIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleBoxTruckHostess">
@@ -78,7 +78,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="BoxTruckUIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleDuster">
@@ -98,7 +98,7 @@
 			<property name="Explosion.EntityDamage" value="30"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_gyrocopter"/>
+			<property name="MapIcon" value="DusterUIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleGNXBlack">
@@ -118,7 +118,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="GNXUIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleGNXRed">
@@ -138,7 +138,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="GNXUIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleGolfCart">
@@ -158,7 +158,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="GolfCartUIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleMarauder">
@@ -178,7 +178,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="MarauderUIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleMD500">
@@ -198,7 +198,7 @@
 			<property name="Explosion.EntityDamage" value="30"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_gyrocopter"/>
+			<property name="MapIcon" value="MD500UIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleMRAP">
@@ -218,7 +218,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="MRAPUIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleNova">
@@ -238,7 +238,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="NovaUIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleNovared">
@@ -258,7 +258,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="NovaUIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleNovablack">
@@ -278,7 +278,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="NovaUIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehiclePickup">
@@ -298,7 +298,87 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="PickupUIicon"/>
+		</entity_class>
+		
+		<entity_class name="vehicleStalliongreen">
+			<property name="Tags" value="vehicle"/>
+			<property name="Class" value="EntityVJeep"/>
+			<property name="Parent" value="Cars"/>
+			<property name="Prefab" value="#@modfolder:Resources/Stallion1.unity3d?Stalliongreen.prefab"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="metal"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="79"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="6"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="5"/>
+			<property name="Explosion.BlockDamage" value="100"/>
+			<property name="Explosion.EntityDamage" value="100"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="SUIicon"/>
+		</entity_class>
+		
+		<entity_class name="vehicleStallionred">
+			<property name="Tags" value="vehicle"/>
+			<property name="Class" value="EntityVJeep"/>
+			<property name="Parent" value="Cars"/>
+			<property name="Prefab" value="#@modfolder:Resources/Stallion1.unity3d?Stallionred.prefab"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="metal"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="79"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="6"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="5"/>
+			<property name="Explosion.BlockDamage" value="100"/>
+			<property name="Explosion.EntityDamage" value="100"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="SUIicon"/>
+		</entity_class>
+		
+		<entity_class name="vehicleStallionblue">
+			<property name="Tags" value="vehicle"/>
+			<property name="Class" value="EntityVJeep"/>
+			<property name="Parent" value="Cars"/>
+			<property name="Prefab" value="#@modfolder:Resources/Stallion1.unity3d?Stallionblue.prefab"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="metal"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="79"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="6"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="5"/>
+			<property name="Explosion.BlockDamage" value="100"/>
+			<property name="Explosion.EntityDamage" value="100"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="SUIicon"/>
+		</entity_class>
+		
+		<entity_class name="vehicleStallionwhite">
+			<property name="Tags" value="vehicle"/>
+			<property name="Class" value="EntityVJeep"/>
+			<property name="Parent" value="Cars"/>
+			<property name="Prefab" value="#@modfolder:Resources/Stallion1.unity3d?Stallionwhite.prefab"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="metal"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="79"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="6"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="5"/>
+			<property name="Explosion.BlockDamage" value="100"/>
+			<property name="Explosion.EntityDamage" value="100"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="SUIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleUAZ452">
@@ -318,7 +398,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="UAZ452UIicon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleWillyJeep">
@@ -378,7 +458,7 @@
 			<property name="Explosion.EntityDamage" value="100"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
-			<property name="MapIcon" value="ui_game_symbol_4x4"/>
+			<property name="MapIcon" value="WorkTruckUIicon"/>
 		</entity_class>
 		
 	 </append>

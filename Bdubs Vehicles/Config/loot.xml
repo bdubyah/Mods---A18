@@ -68,6 +68,11 @@
 			<item name="vehicleDusterchassis"/>
 			<item name="vehicleDusteraccessories"/>
 		</lootgroup>
+		
+		<lootgroup name="Stalliongroup">
+			<item name="vehicleStallionchassis"/>
+			<item name="vehicleStallionaccessories"/>
+		</lootgroup>
 	
 	</insertBefore>
 
@@ -84,6 +89,7 @@
 		<item group="Pickupgroup" loot_prob_template="probTemplate0.45"/>
 		<item group="BRDM2group" loot_prob_template="probTemplate0.45"/>
 		<item group="Dustergroup" loot_prob_template="probTemplate0.45"/>
+		<item group="Stalliongroup" loot_prob_template="probTemplate0.65"/>
 	</append>
 
 
