@@ -10,25 +10,25 @@
 			<ingredient name="drinkJarRiverWater" count="1"/>
 		</recipe>
 		
-		<recipe name="drinkNukaCola" count="1" craft_area="chemistryStation" tags="learnable" craft_exp_gain="25">
+		<recipe name="drinkNukaCola" count="1" craft_area="chemistryStation" tags="learnable" craft_time="25" craft_exp_gain="25">
 			<ingredient name="resourceNukaBaseIngredients" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 		</recipe>
 		
-		<recipe name="drinkNukaCherry" count="1" craft_area="chemistryStation" tags="learnable" craft_exp_gain="35">
+		<recipe name="drinkNukaCherry" count="1" craft_area="chemistryStation" tags="learnable" craft_time="35" craft_exp_gain="35">
 			<ingredient name="resourceNukaBaseIngredients" count="1"/>
 			<ingredient name="resourceCropChrysanthemumPlant" count="3"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 		</recipe>
 		
-		<recipe name="drinkNukaQuartz" count="1" craft_area="chemistryStation" tags="learnable" craft_exp_gain="50">
+		<recipe name="drinkNukaQuartz" count="1" craft_area="chemistryStation" tags="learnable" craft_time="45" craft_exp_gain="50">
 			<ingredient name="resourceNukaBaseIngredients" count="1"/>
 			<ingredient name="drinkJarGrainAlcohol" count="1"/>
 			<ingredient name="foodRottingFlesh" count="5"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 		</recipe>
 		
-		<recipe name="drinkNukaQuantum" count="1" craft_area="chemistryStation" tags="learnable" craft_exp_gain="75">
+		<recipe name="drinkNukaQuantum" count="1" craft_area="chemistryStation" tags="learnable" craft_time="60" craft_exp_gain="75">
 			<ingredient name="resourceNukaBaseIngredients" count="1"/>
 			<ingredient name="drinkJarGrainAlcohol" count="1"/>
 			<ingredient name="foodRottingFlesh" count="10"/>
@@ -36,7 +36,7 @@
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 		</recipe>
 		
-		<recipe name="thrownNukaNade" count="1" craft_area="chemistryStation" craft_exp_gain="75">
+		<recipe name="thrownNukaNade" count="1" craft_area="chemistryStation" craft_time="60" craft_exp_gain="75">
 			<ingredient name="drinkNukaQuantum" count="1"/>
 			<ingredient name="drinkJarGrainAlcohol" count="1"/>
 			<ingredient name="resourceAcid" count="1"/>

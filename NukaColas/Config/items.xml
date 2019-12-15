@@ -13,6 +13,7 @@
 			<property name="Weight" value="10"/>
 			<property name="EconomicValue" value="125"/>
 			<property name="CraftingIngredientTime" value="15"/>
+			<property name="UnlockedBy" value="bookNukaRecipes"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1"/>
@@ -62,6 +63,7 @@
 			<property name="Weight" value="10"/>
 			<property name="EconomicValue" value="175"/>
 			<property name="CraftingIngredientTime" value="15"/>
+			<property name="UnlockedBy" value="bookNukaRecipes"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1"/>
@@ -111,6 +113,7 @@
 			<property name="Weight" value="10"/>
 			<property name="EconomicValue" value="500"/>
 			<property name="CraftingIngredientTime" value="15"/>
+			<property name="UnlockedBy" value="bookNukaRecipes"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1"/>
@@ -159,6 +162,7 @@
 			<property name="Weight" value="10"/>
 			<property name="EconomicValue" value="250"/>
 			<property name="CraftingIngredientTime" value="15"/>
+			<property name="UnlockedBy" value="bookNukaRecipes"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1"/>
@@ -203,12 +207,14 @@
 			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 			<property name="Material" value="Mpaper"/>
 			<property name="CustomIcon" value="schematicMaster"/> <property name="CustomIconTint" value="D42F2F"/>	
+			<property name="AltItemTypeIcon" value="book_read"/>
 			<property name="Stacknumber" value="50"/> 
 			<property name="EconomicValue" value="10000"/>
 			<property name="SellableToTrader" value="true"/>
 			<property name="FuelValue" value="4"/>
 			<property name="Weight" value="40"/>
 			<property name="Group" value="Books"/>
+			<property name="Unlocks" value="resourceNukaBaseIngredients,drinkNukaCola,drinkNukaCherry,drinkNukaQuartz,drinkNukaQuantum"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/> 
 				<property name="Consume" value="true"/> 
@@ -216,19 +222,19 @@
 				<property name="Use_time" value="..."/>
 				<property name="ActionExpBonusMultiplier" value="0"/> 
 				<property name="Sound_start" value="recipe_unlocked"/>
-				<requirement name="CVarCompare" cvar="Nuka Base Ingredients" operation="Equals" value="0"/>
+				<!--<requirement name="CVarCompare" cvar="Nuka Base Ingredients" operation="Equals" value="0"/>
 				<requirement name="CVarCompare" cvar="Nuka Cola" operation="Equals" value="0"/>
 				<requirement name="CVarCompare" cvar="Nuka Cherry" operation="Equals" value="0"/>
 				<requirement name="CVarCompare" cvar="Nuka Quartz" operation="Equals" value="0"/>
-				<requirement name="CVarCompare" cvar="Nuka Quantum" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="Nuka Quantum" operation="Equals" value="0"/>-->
 			</property>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveSkillExp" target="self" skill="attIntellect" experience="1000"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Nuka Base Ingredients" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Nuka Cola" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Nuka Cherry" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Nuka Quartz" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Nuka Quantum" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceNukaBaseIngredients" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkNukaCola" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkNukaCherry" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkNukaQuartz" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkNukaQuantum" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" target="self" message="Recipe Unlocked: Nuka Base Ingredients"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" target="self" message="Recipe Unlocked: Nuka Cola"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" target="self" message="Recipe Unlocked: Nuka Cherry"/>
@@ -250,6 +256,7 @@
 			<property name="Group" value="Science"/>
 			<property name="CraftingSkillGroup" value="craftSkillScience"/>
 			<property name="ActionSkillGroup" value="Medicine"/>
+			<property name="UnlockedBy" value="bookNukaRecipes"/>
 		</item>
 		
 		<item name="thrownNukaNade">
