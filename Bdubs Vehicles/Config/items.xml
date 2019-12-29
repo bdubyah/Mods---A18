@@ -5,14 +5,14 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="BRDM2chassis"/>
 			<property name="DescriptionKey" value="vehicleBRDM2chassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleBRDM2accessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="BRDM2accessories"/>
 			<property name="DescriptionKey" value="vehicleBRDM2accessoriesDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleBRDM2placeable">
@@ -79,14 +79,14 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Chargerchassis"/>
 			<property name="DescriptionKey" value="vehicleChargerchassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleChargeraccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Chargeraccessories"/>
 			<property name="DescriptionKey" value="vehicleChargeraccessoriesDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleChargerblackplaceable">
@@ -281,18 +281,62 @@
 			</effect_group>
 		</item>
 		
+		<item name="vehicleCruiserChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Cruiserchassis"/>
+			<property name="DescriptionKey" value="vehicleCruiserChassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleCruiserbars">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Cruiserbars"/>
+			<property name="DescriptionKey" value="vehicleCruiserbarsDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleCruiserplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Cruiser"/>
+			<property name="DescriptionKey" value="vehicleCruiserplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Cruiser1.unity3d?Cruiser.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleCruiser"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleCruiser2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Cruiser2"/>
+			<property name="DescriptionKey" value="vehicleCruiser2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Cruiser1.unity3d?Cruiser2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleCruiser2"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehicleDirtBikeChassis">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="DirtBikechassis"/>
 			<property name="DescriptionKey" value="vehicleDirtBikeChassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="1000"/>
 		</item>
 		
 		<item name="vehicleDirtBikeParts">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="DirtBikeparts"/>
 			<property name="DescriptionKey" value="vehicleDirtBikePartsDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="1000"/>
 		</item>
 		
 		<item name="vehicleDirtBikeplaceable">
@@ -300,7 +344,7 @@
 			<property name="CustomIcon" value="DirtBike"/>
 			<property name="DescriptionKey" value="vehicleDirtBikeplaceableDesc"/>
 			<property name="Meshfile" value="#@modfolder:Resources/db1.unity3d?Dirt_Bike.prefab"/>
-			<property name="EconomicValue" value="10000"/>
+			<property name="EconomicValue" value="1000"/>
 			<property class="Action1">
 				<property name="Vehicle" value="vehicleDirtBike"/>
 				<property name="VehicleSize" value="4.7, 4.8, 5"/>
@@ -314,14 +358,14 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Dusterchassis"/>
 			<property name="DescriptionKey" value="vehicleDusterchassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleDusteraccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Dusteraccessories"/>
 			<property name="DescriptionKey" value="vehicleDusteraccessoriesDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleDusterplaceable">
@@ -343,14 +387,14 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="GNXchassis"/>
 			<property name="DescriptionKey" value="vehicleGNXchassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleGNXaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="GNXchassis"/>
 			<property name="DescriptionKey" value="vehicleGNXaccessoriesDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleGNXBlackplaceable">
@@ -387,14 +431,14 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="GolfCartchassis"/>
 			<property name="DescriptionKey" value="vehicleGolfCartchassisDesc"/> 
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="1000"/>
 		</item>
 
 		<item name="vehicleGolfCartaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="GolfCartaccessories"/>
 			<property name="DescriptionKey" value="vehicleGolfCartaccessoriesDesc"/> 
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="1000"/>
 		</item>
 
 		<item name="vehicleGolfCartplaceable">
@@ -476,18 +520,62 @@
 			</effect_group>
 		</item>
 		
+		<item name="vehicleJunkerChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Junkerchassis"/>
+			<property name="DescriptionKey" value="vehicleJunkerChassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleJunkerbars">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Junkerbars"/>
+			<property name="DescriptionKey" value="vehicleJunkerbarsDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleJunkerplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Junker"/>
+			<property name="DescriptionKey" value="vehicleJunkerplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Junker1.unity3d?Junker.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleJunker"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleJunker2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Junker2"/>
+			<property name="DescriptionKey" value="vehicleJunker2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Junker1.unity3d?Junker2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleJunker2"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehicleMarauderchassis">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Marauderchassis"/>
 			<property name="DescriptionKey" value="vehicleMarauderchassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleMarauderaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Marauderaccessories"/>
 			<property name="DescriptionKey" value="vehicleMarauderaccessoriesDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleMarauderplaceable">
@@ -509,14 +597,14 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="MD500chassis"/>
 			<property name="DescriptionKey" value="vehicleMD500chassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleMD500accessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="MD500accessories"/>
 			<property name="DescriptionKey" value="vehicleMD500accessoriesDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleMD500placeable">
@@ -538,14 +626,14 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="MRAPparts"/>
 			<property name="DescriptionKey" value="vehicleMRAPpartsDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleMRAPaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="MRAPaccessories"/>
 			<property name="DescriptionKey" value="vehicleMRAPaccessoriesDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleMRAPplaceable">
@@ -567,14 +655,14 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Novachassis"/>
 			<property name="DescriptionKey" value="vehicleNovachassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleNovaaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Novaaccessories"/>
 			<property name="DescriptionKey" value="vehicleNovaaccessoriesDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleNovaplaceable">
@@ -626,14 +714,14 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Pickupchassis"/>
 			<property name="DescriptionKey" value="vehiclePickupchassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehiclePickupaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Pickupaccessories"/>
 			<property name="DescriptionKey" value="vehiclePickupaccessoriesDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehiclePickupplaceable">
@@ -651,18 +739,62 @@
 			</effect_group>
 		</item>
 		
+		<item name="vehicleRatChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Ratchassis"/>
+			<property name="DescriptionKey" value="vehicleRatChassisDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleRatbars">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="Ratbars"/>
+			<property name="DescriptionKey" value="vehicleRatbarsDesc"/>
+			<property name="EconomicValue" value="100"/>
+		</item>
+		
+		<item name="vehicleRatplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Rat"/>
+			<property name="DescriptionKey" value="vehicleRatplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Rat1.unity3d?Rat.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleRat"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
+		<item name="vehicleRat2placeable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="Rat2"/>
+			<property name="DescriptionKey" value="vehicleRat2placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Rat1.unity3d?Rat2.prefab"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleRat2"/>
+				<property name="VehicleSize" value="2.7, 2.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="5500"/>
+			</effect_group>
+		</item>
+		
 		<item name="vehicleStallionchassis">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Schassis"/>
 			<property name="DescriptionKey" value="vehicleStallionchassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleStallionaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="Saccessories"/>
 			<property name="DescriptionKey" value="vehicleStallionaccessoriesDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleStalliongreenplaceable">
@@ -729,7 +861,7 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="UAZchassis"/>
 			<property name="DescriptionKey" value="vehicleUAZ452chassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 				
 		<item name="vehicleUAZ452placeable">
@@ -781,14 +913,14 @@
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="WorkTruckchassis"/>
 			<property name="DescriptionKey" value="vehicleWorkTruckchassisDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleWorkTruckaccessories">
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="CustomIcon" value="WorkTruckaccessories"/>
 			<property name="DescriptionKey" value="vehicleWorkTruckaccessoriesDesc"/>
-			<property name="EconomicValue" value="100"/>
+			<property name="EconomicValue" value="10000"/>
 		</item>
 		
 		<item name="vehicleWorkTruckplaceable">

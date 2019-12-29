@@ -83,25 +83,43 @@
 			<item name="vehicleDirtBikeChassis"/>
 			<item name="vehicleDirtBikeParts"/>
 		</lootgroup>
+		
+		<lootgroup name="Cruisergroup">
+			<item name="vehicleCruiserChassis"/>
+			<item name="vehicleCruiserbars"/>
+		</lootgroup>
+		
+		<lootgroup name="Ratgroup">
+			<item name="vehicleRatChassis"/>
+			<item name="vehicleRatbars"/>
+		</lootgroup>
+		
+		<lootgroup name="Junkergroup">
+			<item name="vehicleJunkerChassis"/>
+			<item name="vehicleJunkerbars"/>
+		</lootgroup>
 	
 	</insertBefore>
 
 
 	<append xpath="/lootcontainers/lootgroup[@name='vehicleParts']">
-		<item group="WorkTruckgroup" loot_prob_template="probTemplate0.65"/>
-		<item group="UAZ452group" loot_prob_template="probTemplate0.65"/>
-		<item group="Novagroup" loot_prob_template="probTemplate0.65"/>
-		<item group="MRAPgroup" loot_prob_template="probTemplate0.65"/>
-		<item group="MD500group" loot_prob_template="probTemplate0.65"/>
-		<item group="Maraudergroup" loot_prob_template="probTemplate0.65"/>
-		<item group="GolfCartgroup" loot_prob_template="probTemplate0.65"/>
-		<item group="GNXgroup" loot_prob_template="probTemplate0.45"/>
-		<item group="Pickupgroup" loot_prob_template="probTemplate0.45"/>
-		<item group="BRDM2group" loot_prob_template="probTemplate0.45"/>
-		<item group="Dustergroup" loot_prob_template="probTemplate0.45"/>
-		<item group="Stalliongroup" loot_prob_template="probTemplate0.65"/>
-		<item group="Chargergroup" loot_prob_template="probTemplate0.65"/>
-		<item group="DirtBikegroup" loot_prob_template="probTemplate0.70"/>
+		<item group="WorkTruckgroup" loot_prob_template="probTemplate0.45"/>
+		<item group="UAZ452group" loot_prob_template="probTemplate0.4"/>
+		<item group="Novagroup" loot_prob_template="probTemplate0.45"/>
+		<item group="MRAPgroup" loot_prob_template="probTemplate0.4"/>
+		<item group="MD500group" loot_prob_template="probTemplate0.35"/>
+		<item group="Maraudergroup" loot_prob_template="probTemplate0.4"/>
+		<item group="GolfCartgroup" loot_prob_template="probTemplate0.55"/>
+		<item group="GNXgroup" loot_prob_template="probTemplate0.4"/>
+		<item group="Pickupgroup" loot_prob_template="probTemplate0.4"/>
+		<item group="BRDM2group" loot_prob_template="probTemplate0.35"/>
+		<item group="Dustergroup" loot_prob_template="probTemplate0.35"/>
+		<item group="Stalliongroup" loot_prob_template="probTemplate0.55"/>
+		<item group="Chargergroup" loot_prob_template="probTemplate0.55"/>
+		<item group="DirtBikegroup" loot_prob_template="probTemplate0.50"/>
+		<item group="Cruisergroup" loot_prob_template="probTemplate0.60"/>
+		<item group="Ratgroup" loot_prob_template="probTemplate0.60"/>
+		<item group="Junkergroup" loot_prob_template="probTemplate0.60"/>
 	</append>
 
 
