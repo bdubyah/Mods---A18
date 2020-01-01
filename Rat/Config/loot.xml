@@ -10,7 +10,7 @@
 	</insertBefore>
 
 
-	<append xpath="/lootcontainers/lootgroup[@name='vehiclebars']">
+	<append xpath="/lootcontainers/lootgroup[@name='vehicleParts']">
 		<item group="Ratgroup" loot_prob_template="probTemplate0.60"/>
 	</append>
 
