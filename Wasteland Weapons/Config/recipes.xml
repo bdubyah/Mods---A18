@@ -1,6 +1,14 @@
 <configs>
 <append xpath="/recipes">
-
+	
+	<recipe name="gunLAR" count="1" craft_area="workbench" craft_time="60" tags="learnable,perkDeadEye">
+		<ingredient name="gunHuntingRifleParts" count="8"/>
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="10"/>
+		<ingredient name="resourceScrapPolymers" count="10"/>
+		<ingredient name="resourceSpring" count="2"/>
+	</recipe>
+	
 	<recipe name="gunPipePistol" count="1" craft_area="workbench" craft_time="60">
 		<ingredient name="resourceForgedIron" count="5"/>
 		<ingredient name="resourceMechanicalParts" count="10"/>

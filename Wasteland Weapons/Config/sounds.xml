@@ -2,8 +2,8 @@
 <append xpath="/Sounds">
 
 	<SoundDataNode name="whistle"> 
-		 <AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-		 <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
+		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
 			<Noise ID="1" range="5" volume="5" time="3" heat_map_strength="0.005" heat_map_time="300"/>
 			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?trainwhistle1"/>
 			<LocalCrouchVolumeScale value="0.5"/> 
@@ -12,22 +12,30 @@
 			<MaxVoices value="10"/> 
 			<MaxRepeatRate value="0.001"/>
 	</SoundDataNode>
-<!--
-	<SoundDataNode name="PipeShotgunSMSBReload"> <AudioSource name="Sounds/AudioSource_Reloads"/>
-	<Noise ID="2" volume="15" time="3" muffled_when_crouched="0.5"/>
-	<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?PipeShotgunSMSBReload"/>
-	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>.-->
 
 	<SoundDataNode name="PipeShotgunSMSBReload"> 
-	 <AudioSource name="Sounds/AudioSource_WeaponFire"/> 
-	 <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-		<Noise ID="2" range="7" volume="11" time="3" heat_map_strength="0.3" heat_map_time="120"/>
-		<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?PipeShotgunSMSBReload"/>
-		<LocalCrouchVolumeScale value="0.5"/> 
-		<CrouchNoiseScale value="0.5"/>
-		<NoiseScale value="1"/> 
-		<MaxVoices value="10"/> 
-		<MaxRepeatRate value="0.001"/>
+		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
+		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<Noise ID="2" range="7" volume="11" time="3" heat_map_strength="0.3" heat_map_time="120"/>
+			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?PipeShotgunSMSBReload"/>
+			<LocalCrouchVolumeScale value="0.5"/> 
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/> 
+			<MaxVoices value="10"/> 
+			<MaxRepeatRate value="0.001"/>
+	</SoundDataNode>
+	
+	<SoundDataNode name="LAR_fire"> 
+		<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
+		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+			<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.9" heat_map_time="180"/>
+			<AudioClip ClipName="#@modfolder:Resources/Sounds.unity3d?LARfire"/>
+			<LocalCrouchVolumeScale value="1"/> 
+			<CrouchNoiseScale value="1"/> 
+			<NoiseScale value="1"/> 
+			<MaxVoices value="30"/> 
+			<MaxVoicesPerEntity value="10"/> 
+			<MaxRepeatRate value="0.001"/> 
 	</SoundDataNode>
 
 </append>

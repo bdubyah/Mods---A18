@@ -1,4 +1,22 @@
 <configs>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']">
+		
+		<item_property_overrides name="gunLAR_Legendary">
+			<property name="ScopeOffset" value="0,0.0,0" />
+			<property name="ScopeScale" value="1,1,1" />
+			<property name="ScopeCameraOffset" value="0,0,0" />
+		</item_property_overrides>
+		
+		<item_property_overrides name="gunLAR">
+			<property name="ScopeOffset" value="0,0.0,0" />
+			<property name="ScopeScale" value="1,1,1" />
+			<property name="ScopeCameraOffset" value="0,0,0" />
+		</item_property_overrides>
+		
+	</append>
+-->
+
 	<append xpath="/item_modifiers">
 	
 	<item_modifier name="modOilFilterSuppressor" installable_tags="gun,PipeGun" blocked_tags="revolver,flaredBarrel" modifier_tags="barrelAttachment" type="attachment">
@@ -19,13 +37,13 @@
 			<property name="BarrelScale" value="1,1,1"/>
 		</item_property_overrides>
 
-		<item_property_overrides name="Pipe Pistol">
+		<item_property_overrides name="gunPipePistol">
 			<property name="Sound_start" value="pistol_s_fire"/>
 			<property name="BarrelOffset" value="0,0,0"/>
 			<property name="BarrelScale" value="1,1,1"/>
 		</item_property_overrides>
 
-		<item_property_overrides name="Pipe Rifle">
+		<item_property_overrides name="gunPipeRifle">
 			<property name="Sound_start" value="sniperrifle_s_fire"/>
 			<property name="BarrelOffset" value="0,0,0"/>
 			<property name="BarrelScale" value="1,1,1"/>
@@ -123,7 +141,7 @@
 		<property name="PickupJournalEntry" value="augmentGunsTip"/>
 	</item_modifier>
 	
-	<item_modifier name="modFlashlight" installable_tags="PipeShotgun,PipeGun" modifier_tags="sideAttachment" type="attachment">
+	<item_modifier name="modFlashlight" installable_tags="PipeShotgun,PipeGun,LAR,LegPipeShotgun" modifier_tags="sideAttachment" type="attachment">
 		<property name="Stacknumber" value="1"/>
 		<property name="LightValue" value="0.7"/>
 		<property name="CustomIcon" value="meleeToolFlashlight02"/><property name="CustomIconTint" value="4b844b"/>
@@ -139,4 +157,7 @@
 	</item_modifier>
 	
 	</append>
+	
+	
+	
 </configs>			

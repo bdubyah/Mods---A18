@@ -6,9 +6,17 @@
 		<item name="gunPipePistol_Legendary" count="1"/>
 		<item name="gunPipeShotgunSMSB_Legendary" count="1"/>
 		<item name="gunPipeRifle_Legendary" count="1"/>
+		<item name="gunLAR_Legendary" count="1"/>
 	</lootgroup>
 	
 </insertBefore>
+
+<append xpath="/lootcontainers/lootgroup[@name='groupQuestRanged']">
+	<item name="gunPipePistol_Legendary" loot_prob_template="GradeCLootLow"/>
+	<item name="gunPipeShotgunSMSB_Legendary" loot_prob_template="GradeCLootLow"/>
+	<item name="gunPipeRifle_Legendary" loot_prob_template="GradeCLootLow"/>
+	<item name="gunLAR_Legendary" loot_prob_template="GradeCLootLow"/>
+</append>
 
 <!-- safes, weapon caches rare good loot -->
 <append xpath="/lootcontainers/lootcontainer[@id='11']">
@@ -91,7 +99,7 @@
 <append xpath="/lootcontainers/lootcontainer[@id='121']">
 	<item group="LegendaryPipeWeapons" prob=".007"/>
 	<item name="gunFatMan" prob="0.04"/>
-	<item name="ammoNuke" count="1,4" prob="0.06"/>
+	<item name="ammoNuke" count="1,4" prob="0.04"/>
 </append>
 
 <!-- cntBuriedWeaponChest -->
@@ -111,27 +119,27 @@
 
 <!-- cars-->
 <append xpath="/lootcontainers/lootcontainer[@id='19']">
-	<item name="modOilFilterSuppressor" prob="0.08"/>
+	<item name="modOilFilterSuppressor" prob="0.01"/>
 </append>
 
 <!-- garage stuff, tools, etc -->
 <append xpath="/lootcontainers/lootcontainer[@id='22']">
-	<item name="modOilFilterSuppressor" prob="0.1"/>
+	<item name="modOilFilterSuppressor" prob="0.01"/>
 </append>
 
 <!-- army truck-->
 <append xpath="/lootcontainers/lootcontainer[@id='83']">
-	<item name="modOilFilterSuppressor" prob="0.08"/>
+	<item name="modOilFilterSuppressor" prob="0.01"/>
 </append>
 
 <!-- car parts shipping crate -->
 <append xpath="/lootcontainers/lootcontainer[@id='90']">
-	<item name="modOilFilterSuppressor" prob="0.08"/>
+	<item name="modOilFilterSuppressor" prob="0.01"/>
 </append>
 
 <!-- cntToolBoxClosed, cntRollingToolBoxClosed -->
 <append xpath="/lootcontainers/lootcontainer[@id='124']">
-	<item name="modOilFilterSuppressor" prob="0.1"/>
+	<item name="modOilFilterSuppressor" prob="0.01"/>
 </append>
 
 

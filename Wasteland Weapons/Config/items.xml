@@ -1,8 +1,102 @@
 <configs>
 <append xpath="/items">
 
+<item name="gunLAR"> 
+	<property name="Tags" value="weapon,LAR,ranged,holdBreathAiming,largeTopAttachments,reloadPenalty,attPerception,perkDeadEye,canHaveCosmetic"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="HoldType" value="11"/>
+	<property name="DescriptionKey" value="gunLARDesc"/>
+	<property name="Meshfile" value="#@modfolder:Resources/LAR1.unity3d?LeverActionRifle.prefab"/>
+	<property name="Material" value="MRifleParts"/> <property name="Weight" value="6"/>
+	<property name="CustomIcon" value="LAR"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="meleeToolFlashlight02"/>
+	<property name="CrosshairOnAim" value="false"/> 
+	<property name="CrosshairUpAfterShot" value="true"/>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property name="LightSource" value="lightSource"/> 
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/> 
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value=".45"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="UnlockedBy" value="perkDeadEye,gunMR10Schematic"/>
+	<property name="ShowQuality" value="true"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value=".5"/> 
+		<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP"/>
+		<property name="Reload_time" value="2.5"/>
+		<property name="Sound_start" value="LAR_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Sound_reload" value="sniperrifle_reload"/>
+		<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+		<property name="Particles_muzzle_fire_fpv" value="gunfire_magnum_fpv"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+	</property>
+
+	<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="50"/>
+		<property name="Zoom_max_in" value="50"/>
+		<property name="ScopeCameraOffset" value="0,.0215,-.05"/>
+	</property>
+
+	<effect_group name="gunLAR">
+		<passive_effect name="MaxRange" operation="base_set" value="150"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="60"/>
+		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> 
+		<passive_effect name="EntityDamage" operation="base_add" value="5"/>
+
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="35"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+
+		<passive_effect name="MagazineSize" operation="base_set" value="8"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="0.8"/> 
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> 
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> 
+
+		<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/> 
+		<!-- <passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05"/> 
+		<passive_effect name="MagazineSize" operation="base_add" value="-.5,1.6"/> -->
+		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> 
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="6"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="6"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".01"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2"/>
+
+		<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="3.5"/>
+		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="4.5"/>
+
+		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.2"/>
+		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".2"/>
+
+		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="11"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value="1"/>
+
+		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6" tags="perkDeadEye"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeadEye"/>
+
+	</effect_group>
+</item>
+
 <item name="gunPipePistol">
-	<property name="Tags" value="ranged,holdBreathAiming,reloadPenalty,shortRange,pistol,sideAttachments,magazine,perkGunslinger,PipeGun"/>
+	<property name="Tags" value="ranged,holdBreathAiming,reloadPenalty,shortRange,pistol,magazine,perkGunslinger,PipeGun"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="DescriptionKey" value="gunPipePistolDesc"/>
 	<property name="HoldType" value="1"/>
@@ -47,6 +141,7 @@
 		<property name="Zoom_max_out" value="55"/>
 		<property name="Zoom_max_in" value="55"/>
 		<property name="ScopeCameraOffset" value="0,-.0011,0"/>
+		<property name="AutoReload" value="true"/>
 	</property>
 
 	<effect_group name="Base Effects">
@@ -63,7 +158,7 @@
 		<passive_effect name="MagazineSize" operation="base_set" value="10"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".75"/> 
 		
-		<passive_effect name="ModSlots" operation="base_set" value="2,2,2,3,3,3" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
@@ -95,7 +190,7 @@
 </item>
 
 <item name="gunPipeRifle">
-	<property name="Tags" value="ranged,holdBreathAiming,reloadPenalty,sideAttachments,magazine,perkDeadEye,LongBarrel,PipeGun"/>
+	<property name="Tags" value="ranged,holdBreathAiming,reloadPenalty,magazine,perkDeadEye,LongBarrel,PipeGun"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="DescriptionKey" value="gunPipeRifleDesc"/>
 	<property name="HoldType" value="11"/>
@@ -137,6 +232,7 @@
 		<property name="Sound_reload" value="sniperrifle_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="AutoReload" value="true"/>
 	</property>
 
 	<property class="Action1">
@@ -156,7 +252,7 @@
 		<passive_effect name="MagazineSize" operation="base_set" value="10"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".8"/> 
 		
-		<passive_effect name="ModSlots" operation="base_set" value="2,2,2,3,3,3" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
@@ -239,7 +335,7 @@
 
 		<passive_effect name="MagazineSize" operation="base_set" value="8"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".6"/>
-		<passive_effect name="ModSlots" operation="base_set" value="0,0,0,0,0,0" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
@@ -372,7 +468,7 @@
 
 		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5"/> 
-		<passive_effect name="ModSlots" operation="base_set" value="2,2,2,2,2,2" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value="0" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
@@ -382,7 +478,7 @@
 
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="7"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="7"/>
-		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0.1"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0.07"/>
 		<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="0.8"/>
 		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
 		<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2"/>
@@ -395,7 +491,7 @@
 		
 		<display_value name="dRecoil" value="100" />
 		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2.2"/>
-		<passive_effect name="WeaponHandling" operation="base_set" value="0.8"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value="0.9"/>
 
 		<passive_effect name="DegradationMax" operation="base_set" value="2700"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="135"/>
@@ -549,13 +645,14 @@
 		<property name="Sound_repeat" value=""/>
 		<property name="Sound_end" value=""/>
 		<property name="Sound_empty" value="dryfire"/>
-		<property name="Sound_reload" value=""/>
+		<property name="Sound_reload" value="PipeShotgunSMSBReload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
 		<property name="ScopeOffset" value="-0.00062,0.088,0.065"/>
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<property name="RaySpread" value="2.6"/>
+		<property name="AutoReload" value="true"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Zoom"/>
@@ -576,7 +673,7 @@
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.05"/>
-		<passive_effect name="ModSlots" operation="base_set" value="2,3,3,3,3,3" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="10" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
@@ -649,6 +746,7 @@
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<property name="RaySpread" value="2.6"/>
+		<property name="AutoReload" value="true"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Zoom"/>
@@ -670,7 +768,7 @@
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="4"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".53"/> 
-		<passive_effect name="ModSlots" operation="base_set" value="2,3,3,3,3,3" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="10" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
@@ -697,7 +795,7 @@
 </item>
 
 <item name="gunPipeShotgunSMSB_Legendary">
-	<property name="Tags" value="weapon,holdBreathAiming,shortRange,perkShotgunMessiah,PipeShotgun"/>
+	<property name="Tags" value="weapon,holdBreathAiming,shortRange,perkShotgunMessiah,LegPipeShotgun"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="DescriptionKey" value="gunPipeShotgunSMSB_LegendaryDesc"/>
 	<property name="CustomIcon" value="Legshotgun"/>
@@ -723,7 +821,7 @@
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 	<property name="LightValue" value="0.45"/>
-	<property name="EconomicValue" value="10000"/>
+	<property name="EconomicValue" value="2500"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 
@@ -743,6 +841,7 @@
 		<property name="SideOffset" value="0,0,0"/>
 		<property name="BarrelOffset" value="0,0,0"/>
 		<property name="RaySpread" value="2.6"/>
+		<property name="AutoReload" value="true"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Zoom"/>
@@ -765,7 +864,7 @@
 		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.05"/>
 		
-		<passive_effect name="ModSlots" operation="base_set" value="0,0,0,0,0,0" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
@@ -796,7 +895,7 @@
 </item>
 
 <item name="gunPipePistol_Legendary">
-	<property name="Tags" value="ranged,holdBreathAiming,reloadPenalty,shortRange,pistol,sideAttachments,magazine,perkGunslinger,PipeGun"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,shortRange,pistol,sideAttachments,magazine,perkGunslinger,PipeGun"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="DescriptionKey" value="gunPipePistol_LegendaryDesc"/>
 	<property name="HoldType" value="1"/>
@@ -820,7 +919,7 @@
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value="0.45"/>
-	<property name="EconomicValue" value="10000"/>
+	<property name="EconomicValue" value="2500"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
@@ -835,6 +934,7 @@
 		<property name="Sound_reload" value="pistol_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+		<property name="AutoReload" value="true"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Zoom"/>
@@ -859,7 +959,7 @@
 		
 		<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
 		
-		<passive_effect name="ModSlots" operation="base_set" value="0,0,0,0,0,0" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
@@ -891,7 +991,7 @@
 </item>
 
 <item name="gunPipeRifle_Legendary">
-	<property name="Tags" value="ranged,holdBreathAiming,reloadPenalty,mediumTopAttachments,sideAttachments,magazine,perkDeadEye,LongBarrel,PipeGun"/>
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,mediumTopAttachments,sideAttachments,magazine,perkDeadEye,LongBarrel,PipeGun"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="DescriptionKey" value="gunPipeRifle_LegendaryDesc"/>
 	<property name="HoldType" value="11"/>
@@ -915,7 +1015,7 @@
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="LightValue" value="0.45"/>
-	<property name="EconomicValue" value="10000"/>
+	<property name="EconomicValue" value="2500"/>
 	<property name="ShowQuality" value="true"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
@@ -952,7 +1052,7 @@
 		<passive_effect name="MagazineSize" operation="base_set" value="15"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> 
 		
-		<passive_effect name="ModSlots" operation="base_set" value="0,0,0,0,0,0" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
@@ -980,6 +1080,102 @@
 		<passive_effect name="DegradationMax" operation="base_set" value="2700"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="9"/>
 		<passive_effect name="EntityPenetrationCount" operation="base_set" value="3"/>
+	</effect_group>
+</item>
+
+<item name="gunLAR_Legendary"> 
+	<property name="Tags" value="weapon,ranged,LAR,holdBreathAiming,largeTopAttachments,reloadPenalty,sideAttachments,attPerception,perkDeadEye"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="DescriptionKey" value="gunLAR_LegendaryDesc"/>
+	<property name="HoldType" value="11"/>
+	<property name="Meshfile" value="#@modfolder:Resources/Legendary1.unity3d?LincolnRifle.prefab"/>
+	<property name="Material" value="MRifleParts"/> <property name="Weight" value="6"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="CustomIcon" value="LegLAR"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Attachments" value="meleeToolFlashlight02"/>
+	<property name="CrosshairOnAim" value="false"/> 
+	<property name="CrosshairUpAfterShot" value="true"/>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property name="LightSource" value="lightSource"/> 
+	<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+	<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/> 
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="LightValue" value=".45"/>
+	<property name="EconomicValue" value="3000"/>
+	
+	<property name="ShowQuality" value="true"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value=".5"/> 
+		<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP"/>
+		<property name="Reload_time" value="2.5"/>
+		<property name="Sound_start" value="LAR_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Sound_reload" value="sniperrifle_reload"/>
+		<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+		<property name="Particles_muzzle_fire_fpv" value="gunfire_magnum_fpv"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+	</property>
+
+	<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="50"/>
+		<property name="Zoom_max_in" value="50"/>
+		<property name="ScopeCameraOffset" value="0,.0215,-.05"/>
+	</property>
+
+	<effect_group name="gunLAR_Legendary">
+		<passive_effect name="MaxRange" operation="base_set" value="175"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="80"/>
+		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> 
+		<passive_effect name="EntityDamage" operation="base_add" value="15"/>
+
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="40"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+
+		<passive_effect name="MagazineSize" operation="base_set" value="10"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="0.8"/> 
+		<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> 
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> 
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> 
+
+		<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/> 
+		<!-- <passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05"/> 
+		<passive_effect name="MagazineSize" operation="base_add" value="-.5,1.6"/> -->
+		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> 
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="6"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="6"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".01"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2"/>
+
+		<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="3.5"/>
+		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="4.5"/>
+
+		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.2"/>
+		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".2"/>
+
+		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="11"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value="1"/>
+
+		<passive_effect name="DegradationMax" operation="base_set" value="300,400" tier="1,6" tags="perkDeadEye"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeadEye"/>
+		
+		<passive_effect name="DismemberChance" operation="base_set" value=".85" tags="head,arm,leg"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_add" value="3"/>
 	</effect_group>
 </item>
 

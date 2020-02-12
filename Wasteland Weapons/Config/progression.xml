@@ -1,0 +1,9 @@
+<configs>
+
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group">
+	
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunLAR"/>
+	
+	</append>
+	
+</configs>
