@@ -70,6 +70,14 @@
 		<ingredient name="resourceOil" count="1"/>
 		<ingredient name="resourceMetalPipe" count="4"/>
 	</recipe>
+	
+	<recipe name="modLongShotgunBarrel" count="1" craft_area="workbench" craft_time="25">
+		<ingredient name="resourceForgedIron" count="3"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapIron" count="5"/>
+		<ingredient name="resourceOil" count="1"/>
+		<ingredient name="resourceMetalPipe" count="3"/>
+	</recipe>
 
 	<recipe name="gunPipeShotgunSMSB" count="1" craft_area="workbench" craft_time="60">
 		<ingredient name="resourceForgedIron" count="25"/>
