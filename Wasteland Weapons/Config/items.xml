@@ -1,4 +1,11 @@
 <configs>
+
+<append xpath="/items/item[@name='gunMR10Schematic']/effect_group">
+	
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunLAR" operation="set" value="1"/>
+	
+</append>
+
 <append xpath="/items">
 
 <item name="gunLAR"> 
