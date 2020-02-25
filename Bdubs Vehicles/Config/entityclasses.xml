@@ -681,6 +681,26 @@
 			<property name="MapIcon" value="ui_game_symbol_motorcycle"/>
 		</entity_class>
 		
+		<entity_class name="vehicleSHERP">
+			<property name="Tags" value="vehicle"/>
+			<property name="Class" value="EntityVJeep"/>
+			<property name="Parent" value="Cars"/>
+			<property name="Prefab" value="#@modfolder:Resources/SHERP1.unity3d?SHERP.prefab"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="metal"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="79"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="6"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="5"/>
+			<property name="Explosion.BlockDamage" value="100"/>
+			<property name="Explosion.EntityDamage" value="100"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="SHERPicon"/>
+		</entity_class>
+		
 		<entity_class name="vehicleStalliongreen">
 			<property name="Tags" value="vehicle"/>
 			<property name="Class" value="EntityVJeep"/>
@@ -779,6 +799,26 @@
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
 			<property name="MapIcon" value="UAZ452UIicon"/>
+		</entity_class>
+		
+		<entity_class name="vehicleUH60">
+			<property name="Tags" value="vehicle"/>
+			<property name="Class" value="EntityVGyroCopter"/>
+			<property name="Parent" value="Cars"/>
+			<property name="Prefab" value="#@modfolder:Resources/uh60.unity3d?UH60heli.prefab"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="metal"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="79"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="6"/>
+			<property name="Explosion.RadiusBlocks" value="3"/>
+			<property name="Explosion.RadiusEntities" value="3"/>
+			<property name="Explosion.BlockDamage" value="30"/>
+			<property name="Explosion.EntityDamage" value="30"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="UH60icon"/>
 		</entity_class>
 		
 		<entity_class name="vehicleWillyJeep">

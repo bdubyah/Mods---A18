@@ -98,6 +98,16 @@
 			<item name="vehicleJunkerChassis"/>
 			<item name="vehicleJunkerbars"/>
 		</lootgroup>
+		
+		<lootgroup name="SHERPgroup">
+			<item name="vehicleSHERPchassis"/>
+			<item name="vehicleSHERPaccessories"/>
+		</lootgroup>
+		
+		<lootgroup name="UH60group">
+			<item name="vehicleUH60chassis"/>
+			<item name="vehicleUH60accessories"/>
+		</lootgroup>
 	
 	</insertBefore>
 
@@ -120,6 +130,8 @@
 		<item group="Cruisergroup" loot_prob_template="probTemplate0.60"/>
 		<item group="Ratgroup" loot_prob_template="probTemplate0.60"/>
 		<item group="Junkergroup" loot_prob_template="probTemplate0.60"/>
+		<item group="SHERPgroup" loot_prob_template="probTemplate0.45"/>
+		<item group="UH60group" loot_prob_template="probTemplate0.35"/>
 	</append>
 
 

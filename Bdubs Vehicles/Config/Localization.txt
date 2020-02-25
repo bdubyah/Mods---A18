@@ -214,3 +214,18 @@ vehicleRatChassisDesc,items,Part,EnChanged,The beginning of something...awesome!
 vehicleRatbars,items,Part,EnChanged,Rat Handlebars,,,,,
 vehicleRatbarsDesc,items,Part,EnChanged,You might need these.,,,,,
 
+vehicleSHERPchassis,items,Part,EnChanged,SHERP Chassis,,,,,
+vehicleSHERPchassisDesc,items,Part,EnChanged,Parts needed to craft the SHERP. Grease Monkey level 4 required.,,,,,
+vehicleSHERPaccessories,items,Part,EnChanged,SHERP Accessories,,,,,
+vehicleSHERPaccessoriesDesc,items,Part,EnChanged,Parts needed to craft the SHERP.,,,,,
+vehicleSHERP,vehicles,vehicle,new,SHERP,,,,,
+vehicleSHERPplaceable,vehicles,item,EnChanged,SHERP,,,,,
+vehicleSHERPplaceableDesc,vehicles,item,EnChanged,A custom offroad vehicle.,,,,,
+
+vehicleUH60chassis,items,Part,EnChanged,UH-60 Chassis,,,,,
+vehicleUH60chassisDesc,items,Part,EnChanged,Parts needed to craft the UH-60. Grease Monkey level 5 required.,,,,,
+vehicleUH60accessories,items,Part,EnChanged,UH-60 Accessories,,,,,
+vehicleUH60accessoriesDesc,items,Part,EnChanged,Parts needed to craft the UH-60.,,,,,
+vehicleUH60,vehicles,vehicle,new,UH-60,,,,,
+vehicleUH60placeable,vehicles,item,EnChanged,UH-60,,,,,
+vehicleUH60placeableDesc,vehicles,item,EnChanged,They can't kill you if they can't hit you!,,,,,
