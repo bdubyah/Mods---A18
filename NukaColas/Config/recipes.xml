@@ -44,6 +44,14 @@
 			<ingredient name="drinkCanEmpty" count="1"/>
 		</recipe>
 		
+		<recipe name="mineBottlecapMine" count="1" craft_area="chemistryStation" craft_time="60" craft_exp_gain="75">
+			<ingredient name="resourceDuctTape" count="2"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+			<ingredient name="resourceBottlecaps" count="10"/>
+			<ingredient name="resourceGunPowder" count="15"/>
+			<ingredient name="cntLunchbox" count="1"/>
+		</recipe>
+		
 		
 	</append>
 </configs>
