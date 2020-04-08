@@ -7,6 +7,7 @@
 		<item name="gunPipeShotgunSMSB_Legendary" count="1"/>
 		<item name="gunPipeRifle_Legendary" count="1"/>
 		<item name="gunLAR_Legendary" count="1"/>
+		<item name="gunMaria" count="1"/>
 	</lootgroup>
 	
 </insertBefore>
@@ -16,6 +17,7 @@
 	<item name="gunPipeShotgunSMSB_Legendary" loot_prob_template="GradeCLootLow"/>
 	<item name="gunPipeRifle_Legendary" loot_prob_template="GradeCLootLow"/>
 	<item name="gunLAR_Legendary" loot_prob_template="GradeCLootLow"/>
+	<item name="gunMaria" loot_prob_template="GradeCLootLow"/>
 	<item name="gunHeavySniperSchematic" loot_prob_template="GradeCLootLow"/>
 	<item name="gunTripleBarrelShotgunSchematic"/>
 </append>
