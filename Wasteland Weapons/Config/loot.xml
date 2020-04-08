@@ -16,6 +16,16 @@
 	<item name="gunPipeShotgunSMSB_Legendary" loot_prob_template="GradeCLootLow"/>
 	<item name="gunPipeRifle_Legendary" loot_prob_template="GradeCLootLow"/>
 	<item name="gunLAR_Legendary" loot_prob_template="GradeCLootLow"/>
+	<item name="gunHeavySniperSchematic" loot_prob_template="GradeCLootLow"/>
+	<item name="gunTripleBarrelShotgunSchematic"/>
+</append>
+
+<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsRare']">
+	<item name="gunLARSchematic"/>
+	<item name="gunHeavySniperSchematic"/>
+	<item name="gunRailwayRifleSchematic"/>
+	<item name="gunIncineratorSchematic"/>
+	<item name="gunTripleBarrelShotgunSchematic"/>
 </append>
 
 <!-- safes, weapon caches rare good loot -->
@@ -70,14 +80,17 @@
 
 <!-- army truck-->
 <append xpath="/lootcontainers/lootcontainer[@id='83']">
-	<item name="ammoNuke" count="1,3" prob="0.06"/>
-	<item name="gunFatMan" prob="0.05"/>
+	<item name="ammoNuke" count="1,3" prob="0.02"/>
+	<item name="gunFatMan" prob="0.01"/>
+	<item name="gunHeavySniperSchematic" prob="0.025"/>
+	<item name="gunIncineratorSchematic" prob="0.025"/>
+	<item name="gunIncinerator" prob="0.01"/>
 </append>
 
 <!-- cntLootCrateHero, Hero / Hidden Stash Cardboard Loot-->
 <append xpath="/lootcontainers/lootcontainer[@id='95']">
 	<item group="LegendaryPipeWeapons" prob=".007"/>
-	<item name="gunFatMan" prob="0.05"/>
+	<item name="gunFatMan" prob="0.01"/>
 </append>
 
 <!-- cntWeaponsBagSmall -->
@@ -98,8 +111,8 @@
 <!-- cntHardenedChestSecure, big, fancy chest -->
 <append xpath="/lootcontainers/lootcontainer[@id='121']">
 	<item group="LegendaryPipeWeapons" prob=".007"/>
-	<item name="gunFatMan" prob="0.04"/>
-	<item name="ammoNuke" count="1,4" prob="0.04"/>
+	<item name="gunFatMan" prob="0.01"/>
+	<item name="ammoNuke" count="1,4" prob="0.02"/>
 </append>
 
 <!-- cntBuriedWeaponChest -->
@@ -115,7 +128,7 @@
 
 
 
-<!-- **********Oil Filter mod*********** -->
+<!-- Oil Filter mod -->
 
 <!-- cars-->
 <append xpath="/lootcontainers/lootcontainer[@id='19']">

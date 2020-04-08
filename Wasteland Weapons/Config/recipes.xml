@@ -1,12 +1,28 @@
 <configs>
 <append xpath="/recipes">
+
+	<!-- Weapons -->
 	
-	<recipe name="gunLAR" count="1" craft_area="workbench" craft_time="60" tags="learnable,perkDeadEye">
+	<recipe name="gunHeavySniper" count="1" craft_area="workbench" tags="learnable,perkDeadEye">
 		<ingredient name="gunHuntingRifleParts" count="8"/>
+		<ingredient name="resourceForgedSteel" count="25"/>
+		<ingredient name="resourceDuctTape" count="15"/>
+		<ingredient name="resourceScrapPolymers" count="25"/>
+		<ingredient name="resourceSpring" count="15"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunHuntingRifleParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
+	</recipe>
+	
+	<recipe name="gunLAR" count="1" craft_area="workbench" tags="learnable,perkDeadEye">
+		<ingredient name="gunHuntingRifleParts" count="5"/>
 		<ingredient name="resourceForgedIron" count="10"/>
 		<ingredient name="resourceMechanicalParts" count="10"/>
 		<ingredient name="resourceScrapPolymers" count="10"/>
 		<ingredient name="resourceSpring" count="2"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunHuntingRifleParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
 	</recipe>
 	
 	<recipe name="gunPipePistol" count="1" craft_area="workbench" craft_time="60">
@@ -25,6 +41,39 @@
 		<ingredient name="resourceMetalPipe" count="2"/>
 	</recipe>
 	
+	<recipe name="gunPipeShotgunSMSB" count="1" craft_area="workbench" craft_time="60">
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceMechanicalParts" count="10"/>
+		<ingredient name="resourceScrapIron" count="15"/>
+		<ingredient name="resourceWood" count="5"/>
+		<ingredient name="resourceMetalPipe" count="1"/>
+	</recipe>
+	
+	<recipe name="gunPipeShotgunEMSB" count="1" craft_area="workbench" craft_time="60">
+		<ingredient name="gunPipeShotgunSMSB" count="1"/>
+		<ingredient name="modShotgunCylinderMag" count="1"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceMetalPipe" count="1"/>
+	</recipe>
+		
+	<recipe name="gunRailwayRifle" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="40"/>
+		<ingredient name="resourceMechanicalParts" count="25"/>
+		<ingredient name="resourceScrapIron" count="5"/>
+		<ingredient name="resourceOil" count="5"/>
+		<ingredient name="resourceMetalPipe" count="3"/>
+	</recipe>
+	
+	<recipe name="gunIncinerator" count="1" craft_area="workbench" craft_time="240" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="40"/>
+		<ingredient name="resourceMechanicalParts" count="25"/>
+		<ingredient name="resourceScrapIron" count="5"/>
+		<ingredient name="resourceOil" count="5"/>
+		<ingredient name="resourceMetalPipe" count="10"/>
+	</recipe>
+		
+	<!-- Mods -->
+	
 	<recipe name="modLongRifleBarrel" count="1" craft_area="workbench" craft_time="25">
 		<ingredient name="resourceForgedIron" count="3"/>
 		<ingredient name="resourceMechanicalParts" count="5"/>
@@ -39,23 +88,6 @@
 		<ingredient name="resourceScrapIron" count="5"/>
 		<ingredient name="resourceOil" count="1"/>
 		<ingredient name="resourceMetalPipe" count="3"/>
-	</recipe>
-	
-	<recipe name="gunRailwayRifle" count="1" craft_area="workbench" craft_time="120">
-		<ingredient name="resourceForgedSteel" count="40"/>
-		<ingredient name="resourceMechanicalParts" count="25"/>
-		<ingredient name="resourceScrapIron" count="5"/>
-		<ingredient name="resourceOil" count="1"/>
-		<ingredient name="resourceMetalPipe" count="3"/>
-	</recipe>
-	
-	<recipe name="ammoRailSpike" count="1" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true" craft_time="7">
-		<ingredient name="unit_iron" count="30"/>
-		<ingredient name="unit_clay" count="15"/>
-	</recipe>
-	
-	<recipe name="ammoRailSpike" count="1" craft_area="workbench" craft_time="5">
-		<ingredient name="resourceForgedSteel" count="2"/>
 	</recipe>
 	
 	<recipe name="modFlashlight" count="1" craft_time="10">
@@ -78,20 +110,23 @@
 		<ingredient name="resourceOil" count="1"/>
 		<ingredient name="resourceMetalPipe" count="3"/>
 	</recipe>
-
-	<recipe name="gunPipeShotgunSMSB" count="1" craft_area="workbench" craft_time="60">
-		<ingredient name="resourceForgedIron" count="25"/>
-		<ingredient name="resourceMechanicalParts" count="10"/>
-		<ingredient name="resourceScrapIron" count="15"/>
-		<ingredient name="resourceWood" count="5"/>
-		<ingredient name="resourceMetalPipe" count="1"/>
+		
+	<!-- Ammo -->
+	
+	<recipe name="ammoRailSpike" count="1" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true" craft_time="7">
+		<ingredient name="unit_iron" count="30"/>
+		<ingredient name="unit_clay" count="15"/>
 	</recipe>
 	
-	<recipe name="gunPipeShotgunEMSB" count="1" craft_area="workbench" craft_time="60">
-		<ingredient name="gunPipeShotgunSMSB" count="1"/>
-		<ingredient name="modShotgunCylinderMag" count="1"/>
-		<ingredient name="resourceMechanicalParts" count="5"/>
-		<ingredient name="resourceMetalPipe" count="1"/>
+	<recipe name="ammoIncinerator" count="5" craft_area="workbench" craft_time="60">
+		<ingredient name="resourceForgedSteel" count="5"/>
+		<ingredient name="resourceOil" count="5"/>
+		<ingredient name="resourceGunPowder" count="10"/>
+		<ingredient name="resourceCloth" count="5"/>
+	</recipe>
+	
+	<recipe name="ammoRailSpike" count="1" craft_area="workbench" craft_time="5">
+		<ingredient name="resourceForgedSteel" count="2"/>
 	</recipe>
 	
 	<recipe name="ammoBowlingball" count="1" craft_area="workbench" craft_time="60">
