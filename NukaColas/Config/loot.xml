@@ -21,6 +21,11 @@
 		<item name="drinkNukaQuantum" count="1"/>
 	</lootgroup>
 	
+	<lootgroup name="SSGroup" count="all">
+		<item name="drinkSunsetSarsaparilla" count="1,4"/>
+		<item name="drinkSunsetSarsaparillaStar" count="1,2"/>
+	</lootgroup>
+	
 	<lootgroup name="NukaVendGroup">
 		<item name="drinkNukaCola"/>
 		<item name="drinkNukaCherry"/>
@@ -64,6 +69,7 @@
 	<item group="NukaQuantum" prob=".02"/>
 	<item group="NukaCherry" prob=".04"/>
 	<item group="NukaCola" prob=".04"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 
 <!-- misc storage, cardboard boxes-->
@@ -85,6 +91,7 @@
 	<item group="NukaCherry" prob=".01"/>
 	<item group="NukaCola" prob=".01"/>
 	<item name="cntLunchbox" prob=".1"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 
 <!-- washing machine, clothes in good condition -->
@@ -98,6 +105,7 @@
 	<item group="NukaQuantum" prob=".01"/>
 	<item group="NukaCherry" prob=".03"/>
 	<item group="NukaCola" prob=".04"/>
+	<item group="SSGroup" prob=".02"/>
 	<item name="cntLunchbox" prob=".1"/>
 	<item name="resourceBottlecaps" count="1,5" prob=".2"/>
 </append>
@@ -108,6 +116,7 @@
 	<item group="NukaQuantum" prob=".01"/>
 	<item group="NukaCherry" prob=".06"/>
 	<item group="NukaCola" prob=".1"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 
 <!-- garage stuff, tools, etc -->
@@ -126,6 +135,7 @@
 	<item group="NukaQuantum" prob=".1"/>
 	<item group="NukaCherry" prob=".1"/>
 	<item group="NukaCola" prob=".1"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 
 <!-- Brew Master's Safe -->
@@ -134,6 +144,7 @@
 	<item group="NukaQuantum" prob=".5"/>
 	<item group="NukaCherry" prob=".1"/>
 	<item group="NukaCola" prob=".1"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 
 <!-- cooler loot -->
@@ -142,6 +153,7 @@
 	<item group="NukaQuantum" prob=".01"/>
 	<item group="NukaCherry" prob=".03"/>
 	<item group="NukaCola" prob=".04"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 
 <!-- trash compactor, trash deluxe! -->
@@ -155,6 +167,7 @@
 	<item group="NukaQuantum" prob=".002"/>
 	<item group="NukaCherry" prob=".01"/>
 	<item group="NukaCola" prob=".015"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 
 <!-- purse -->
@@ -163,6 +176,7 @@
 	<item group="NukaQuantum" prob=".002"/>
 	<item group="NukaCherry" prob=".01"/>
 	<item group="NukaCola" prob=".015"/>
+	<item group="SSGroup" prob=".01"/>
 	<item name="resourceBottlecaps" count="1,5" prob=".2"/>
 </append>
 
@@ -172,6 +186,7 @@
 	<item group="NukaQuantum" prob=".002"/>
 	<item group="NukaCherry" prob=".005"/>
 	<item group="NukaCola" prob=".01"/>
+	<item group="SSGroup" prob=".01"/>
 </append>
 
 <!-- shopping cart-->
@@ -181,6 +196,7 @@
 	<item group="NukaCherry" prob=".005"/>
 	<item group="NukaCola" prob=".01"/>
 	<item name="cntLunchbox" prob=".2"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 
 <!-- shopping basket -->
@@ -190,6 +206,7 @@
 	<item group="NukaCherry" prob=".005"/>
 	<item group="NukaCola" prob=".01"/>
 	<item name="cntLunchbox" prob=".1"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 
 <!-- Shamway Cardboard Loot-->
@@ -198,6 +215,7 @@
 	<item group="NukaQuantum" prob=".005"/>
 	<item group="NukaCherry" prob=".01"/>
 	<item group="NukaCola" prob=".01"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 
 <!-- EntityLootContainerRegular, rare random drop off regular zombies -->
@@ -206,6 +224,7 @@
 	<item group="NukaQuantum" prob=".08"/>
 	<item group="NukaCherry" prob=".1"/>
 	<item group="NukaCola" prob=".1"/>
+	<item group="SSGroup" prob=".02"/>
 	<item name="cntLunchbox" prob=".5"/>
 </append>
 
@@ -215,6 +234,7 @@
 	<item group="NukaQuantum" prob=".01"/>
 	<item group="NukaCherry" prob=".05"/>
 	<item group="NukaCola" prob=".1"/>
+	<item group="SSGroup" prob=".02"/>
 	<item name="cntLunchbox" prob=".75"/>
 </append>
 
@@ -224,6 +244,7 @@
 	<item group="NukaQuantum" prob=".01"/>
 	<item group="NukaCherry" prob=".05"/>
 	<item group="NukaCola" prob=".1"/>
+	<item group="SSGroup" prob=".02"/>
 	<item name="cntLunchbox" prob="1"/>
 </append>
 
@@ -233,6 +254,7 @@
 	<item group="NukaQuantum" prob=".08"/>
 	<item group="NukaCherry" prob=".03"/>
 	<item group="NukaCola" prob=".05"/>
+	<item group="SSGroup" prob=".02"/>
 	<item name="resourceNukaBaseIngredients" prob=".1"/>
 </append>
 
@@ -242,6 +264,7 @@
 	<item group="NukaQuantum" prob=".08"/>
 	<item group="NukaCherry" prob=".1"/>
 	<item group="NukaCola" prob=".13"/>
+	<item group="SSGroup" prob=".02"/>
 	<item name="cntLunchbox" prob=".2"/>
 </append>
 
@@ -251,18 +274,21 @@
 	<item group="NukaQuantum" prob=".005"/>
 	<item group="NukaCherry" prob=".01"/>
 	<item group="NukaCola" prob=".01"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 <append xpath="/lootcontainers/lootcontainer[@id='112']">
 	<item group="NukaQuartz" prob=".008"/>
 	<item group="NukaQuantum" prob=".005"/>
 	<item group="NukaCherry" prob=".01"/>
 	<item group="NukaCola" prob=".01"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 <append xpath="/lootcontainers/lootcontainer[@id='113']">
 	<item group="NukaQuartz" prob=".008"/>
 	<item group="NukaQuantum" prob=".005"/>
 	<item group="NukaCherry" prob=".01"/>
 	<item group="NukaCola" prob=".01"/>
+	<item group="SSGroup" prob=".02"/>
 </append>
 
 
