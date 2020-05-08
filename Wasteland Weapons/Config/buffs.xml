@@ -21,6 +21,24 @@
 	</buff>
 	
 	<buff name="RailSpikeCooldownBuff" hidden="true"> <duration value="3"/> <stack_type value="ignore"/> </buff>
+	
+	<buff name="buffLaserCrit" hidden="true">
+		<damage_type value="heat"/>
+		<stack_type value="replace"/>
+		<duration value="0"/>
+		
+		<effect_group>
+			<requirement name="!EntityTagCompare" tags="player"/>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,1" value="5000,5000"/>					
+		</effect_group>
+		
+		<effect_group name="run particles, cleanup">
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffIsOnFireDisplay" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0.2,0" local_rotation="0,0,0" parent_transform="Hips"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,-.2,0" parent_transform="Hips"/>
+		</effect_group>
+		
+	</buff>
 	<!--
 	<buff name="buffNuke" name_key="buffRadiation3Name" description_key="buffRadiation3Desc" tooltip_key="buffRadiation3Tooltip" icon="ui_game_symbol_radiation" icon_color="255,0,0" icon_blink="true">
 		<damage_type value="radiation"/>

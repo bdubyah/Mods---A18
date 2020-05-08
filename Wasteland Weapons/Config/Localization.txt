@@ -19,6 +19,9 @@ ammoBowlingball,items,Gun,New,Bowling Ball (Ammo),,,,,
 ammoBowlingballDesc,items,Gun,New,Can't find any nukes to use with your shiny Fat Man? Use these! *Not PBA regulation*,,,,,
 ammoRailSpike,items,Gun,New,Rail Spike (Ammo),,,,,
 ammoRailSpikeDesc,items,Gun,New,Normal puny bullets not stopping those pesky zeds? Try these!,,,,,
+
+modFlashlight,item_modifiers,mod,New,Flashlight (Mod),,,,,
+modFlashlightDesc,item_modifiers,mod,New,Homemade flashlight attachment.,,,,,
 modOilFilterSuppressor,item_modifiers,mod,New,Oil Filter Suppressor,,,,,
 modOilFilterSuppressorDesc,item_modifiers,mod,New,Might make it hard to aim but at least they shouldn't hear all those misses...,,,,,
 modLargeMag,item_modifiers,mod,New,Extended Mag (Pipe Guns),,,,,
@@ -27,8 +30,24 @@ modLongRifleBarrel,item_modifiers,mod,New,Long Rifle Barrel (Pipe Rifle),,,,,
 modLongRifleBarrelDesc,item_modifiers,mod,New,Can be installed on a Pipe Rifle to increase range and damage at a cost to handling.,,,,,
 modShotgunCylinderMag,item_modifiers,mod,New,Shotgun Cylinder Mag,,,,,
 modShotgunCylinderMagDesc,item_modifiers,mod,New,Custom made 4 round cylinder for the Pipe Shotgun.,,,,,
-modLongShotgunBarrel,item_modifiers,mod,New,Long Shotgun Barrel (Pipe Shotgun),,,,,
+modLongShotgunBarrel,item_modifiers,mod,New,Long Shotgun Barrel(Pipe Shotgun),,,,,
 modLongShotgunBarrelDesc,item_modifiers,mod,New,Can be installed on a Pipe Shotgun to increase range at a small cost to handling.,,,,,
+modOverchargedCapacitor,item_modifiers,mod,New,Overcharged Capacitor,,,,,
+modOverchargedCapacitorDesc,item_modifiers,mod,New,Can be installed on a Laser weapon to increase magazine size and damage. Increases weapon degradation.,,,,,
+modLaserSplitter,item_modifiers,mod,New,Laser Beam Splitter,,,,,
+modLaserSplitterDesc,item_modifiers,mod,New,Can be installed on a Laser weapon. Splits the beam, firing 2 ammo cells at once. Increases weapon degradation.,,,,,
+modLaserFocuser,item_modifiers,mod,New,Laser Beam Focuser,,,,,
+modLaserFocuserDesc,item_modifiers,mod,New,Can be installed on a Laser weapon to increase range and damage. Increases weapon degradation.,,,,,
+modLaserScope,item_modifiers,mod,New,Laser Rifle Scope,,,,,
+modLaserScopeDesc,item_modifiers,mod,New,Can be installed on a Laser Rifle to add greater sight range. Works best with a Focuser.,,,,,
+gunLaserPistol,items,Gun,New,Laser Pistol,,,,,
+gunLaserPistolDesc,items,Gun,New,Experimental military-tech.,,,,,
+gunLaserRifle,items,Gun,New,Laser Rifle,,,,,
+gunLaserRifleDesc,items,Gun,New,Experimental military-tech.,,,,,
+ammoEC,items,Gun,New,Energy Cell (Ammo),,,,,
+ammoECDesc,items,Gun,New,Ammo used by the Laser Pistol.,,,,,
+ammoMFC,items,Gun,New,Microfusion Cell (Ammo),,,,,
+ammoMFCDesc,items,Gun,New,Ammo used by the Laser Rifle.,,,,,
 gunPipePistol_Legendary,items,Gun,New,[FFC300]Silent But Deadly[-],,,,,
 gunPipePistol_LegendaryDesc,items,Gun,New,Unique variant of the Pipe Pistol. Won't disappear upon breaking. Better stats and an included silencer for increased stealth!,,,,,
 gunPipeShotgunSMSB_Legendary,items,Gun,New,[FFC300]Firestarter[-],,,,,
@@ -49,3 +68,27 @@ ammoIncinerator,items,Gun,New,Incinerator Fuel (Ammo),,,,,
 ammoIncineratorDesc,items,Gun,New,Ammo used by the Incinerator.,,,,,
 gunMaria,items,Gun,New,[FFC300]Maria[-],,,,,
 gunMariaDesc,items,Gun,New,Unique variant of the 9mm pistol. Hits harder and can dismember targets.,,,,,
+gunPewPew,items,Gun,New,[FFC300]Pew Pew[-],,,,,
+gunPewPewDesc,items,Gun,New,Unique variant of the laser pistol. Some homemade tweaks have increased the damage output.,,,,,
+gunAERPrototype,items,Gun,New,[FFC300]AER15 Prototype[-],,,,,
+gunAERPrototypeDesc,items,Gun,New,Unique prototype variant of the laser rifle. Higher damage per beam and shoots 5 rounds in one trigger pull. Hip fire behaves more like a shotgun while aimed fire allows heavy damage to a single target.,,,,,
+
+gunLARSchematic,items,GunRifle,New,Lever Action Rifle Schematic
+gunHeavySniperSchematic,items,GunRifle,New,Heavy Sniper Rifle Schematic
+gunRailwayRifleSchematic,items,GunRifle,New,Railway Rifle Schematic
+gunIncineratorSchematic,items,GunRocket,New,Incinerator Schematic
+gunTripleBarrelShotgunSchematic,items,GunShotgun,New,Triple Barrel Shotgun Schematic
+gunLaserPistolSchematic,items,GunPistol,New,Laser Pistol Schematic
+gunLaserRifleSchematic,items,GunRifle,New,Laser Rifle Schematic
+modOverchargedCapacitorSchematic,item_modifiers,mod,New,Overcharged Capacitor Schematic
+modLaserSplitterSchematic,item_modifiers,mod,New,Laser Splitter Schematic
+modLaserFocuserSchematic,item_modifiers,mod,New,Laser Focuser Schematic
+modLaserScopeSchematic,item_modifiers,mod,New,Laser Rifle Scope Schematic
+
+questPewPew,items,Quest,New,Sunset Sarsaparilla flier
+questPewPewDesc,items,Quest,New,A flier for the Star Bottlecap giveaway. Read it to learn where to go to claim your prize!
+questoldMap,items,Quest,New,Old Map
+questoldMapDesc,items,Quest,New,An old map the trader gave me to show where the fool's stash should be. Read it to learn where the prize should be.
+questLetter,items,Quest,New,Old Letter,,,,,
+questLetterDesc,items,Quest,New,Some old letter that didn't make it to its intended target.,,,,,
+cntPewPewLoot,blocks,Container,New,Hidden Stash

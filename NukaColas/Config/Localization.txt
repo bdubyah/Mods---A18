@@ -7,6 +7,10 @@ drinkNukaQuantum,items,Food,New,Nuka Quantum,,,,,
 drinkNukaQuantumDesc,items,Food,New,Nuka Quantum is totally safe! Boost yourself for a limited time but beware possible side effects!,,,,,
 drinkNukaQuartz,items,Food,New,Nuka Quartz,,,,,
 drinkNukaQuartzDesc,items,Food,New,Doesn't look too good but beggars can't be choosers! Damage resistance is increased and health will regenerate but it does make you queasy!,,,,,
+drinkSunsetSarsaparilla,items,Food,New,Sunset Sarsaparilla,,,,,
+drinkSunsetSarsaparillaDesc,items,Food,New,Probably not the freshest but it's still better than water. Helps recover stamina quicker and restore a small amount of health and stamina.,,,,,
+drinkSunsetSarsaparillaStar,items,Food,New,Sunset Sarsaparilla,,,,,
+drinkSunsetSarsaparillaStarDesc,items,Food,New,Probably not the freshest but it's still better than water. Helps recover stamina quicker and restore a small amount of health and stamina.,,,,,
 resourceNukaBaseIngredients,items,Item,New,Nuka Base Ingredients,,,,,
 resourceNukaBaseIngredientsDesc,items,Item,New,Base ingredients used to brew different Nuka flavors.,,,,,
 bookNukaRecipes,items,Item,New,Nuka Recipes,,,,,
@@ -28,7 +32,14 @@ cntNukaSafeSecure,blocks,Container,New,Secure Nuka Safe
 cntNukaSafeSecureDesc,blocks,Container,New,Nuka Safe.
 cntNukaSafe,blocks,Container,New,Nuka Safe
 cntNukaSafeDesc,blocks,Container,New,Nuka Safe.
+cntNukaVendingMachineBroken,blocks,Container,New,Broken Nuka Vending Machine
+cntNukaVendingMachineBrokenDesc,blocks,Container,New,Broken Nuka Vending Machine.
 cntNukaVendingMachine,blocks,Container,New,Nuka Vending Machine
+cntNukaVendingMachineDesc,blocks,Container,New,Working Nuka Vending Machine.
+cntSSVendingMachineBroken,blocks,Container,New,Broken Sunset Sarsaparilla Vending Machine
+cntSSVendingMachineBrokenDesc,blocks,Container,New,Broken Sunset Sarsaparilla Vending Machine.
+cntSSVendingMachine,blocks,Container,New,Sunset Sarsaparilla Vending Machine
+cntSSVendingMachineDesc,blocks,Container,New,Working Sunset Sarsaparilla Vending Machine.
 
 Terminal,blocks,Container,New,Terminal
 TerminalDesc,blocks,Container,New,Old terminal that surprisingly still works.
@@ -46,3 +57,5 @@ cntLunchbox,items,Item,New,Old Lunchbox,,,,,
 cntLunchboxDesc,items,Item,New,Some old lunchbox. Might be useful for something...
 resourceBottlecaps,items,Item,New,Bottlecaps,,,,,
 resourceBottlecapsDesc,items,Item,New,Bottlecaps left over from various Nuka Colas. Might be useful for something...,,,,,
+resourceBottlecapStar,items,Item,New,Sunset Sarsaparilla Star Bottlecap,,,,,
+resourceBottlecapStarDesc,items,Item,New,Very rare Sunset Sarsaparilla cap. Probably worth some coin or collect 100 and craft a reward...,,,,,

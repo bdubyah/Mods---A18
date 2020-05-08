@@ -1,6 +1,12 @@
 <configs>
 <append xpath="/recipes">
 
+	<!-- Misc -->
+	
+	<recipe name="questPewPew" count="1" craft_time="15">
+		<ingredient name="resourceBottlecapStar" count="100"/>
+	</recipe>
+
 	<!-- Weapons -->
 	
 	<recipe name="gunHeavySniper" count="1" craft_area="workbench" tags="learnable,perkDeadEye">
@@ -11,6 +17,17 @@
 		<ingredient name="resourceSpring" count="15"/>
 		<effect_group>
 			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunHuntingRifleParts,resourceForgedSteel,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+		</effect_group>
+	</recipe>
+	
+	<recipe name="gunTripleBarrelShotgun" count="1" craft_area="workbench" tags="learnable,perkBoomstick">
+		<ingredient name="gunDoubleBarrelShotgunParts" count="5"/>
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceDuctTape" count="15"/>
+		<ingredient name="resourceScrapPolymers" count="25"/>
+		<ingredient name="resourceSpring" count="15"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunDoubleBarrelShotgunParts,resourceForgedIron,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
 		</effect_group>
 	</recipe>
 	
@@ -71,6 +88,22 @@
 		<ingredient name="resourceOil" count="5"/>
 		<ingredient name="resourceMetalPipe" count="10"/>
 	</recipe>
+	
+	<recipe name="gunLaserPistol" count="1" craft_area="workbench" craft_time="600" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="15"/>
+		<ingredient name="resourceMechanicalParts" count="25"/>
+		<ingredient name="resourceElectricParts" count="15"/>
+		<ingredient name="resourceScrapPolymers" count="35"/>
+		<ingredient name="resourceRawDiamond" count="5"/>
+	</recipe>
+	
+	<recipe name="gunLaserRifle" count="1" craft_area="workbench" craft_time="600" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="25"/>
+		<ingredient name="resourceMechanicalParts" count="35"/>
+		<ingredient name="resourceElectricParts" count="25"/>
+		<ingredient name="resourceScrapPolymers" count="55"/>
+		<ingredient name="resourceRawDiamond" count="5"/>
+	</recipe>
 		
 	<!-- Mods -->
 	
@@ -104,6 +137,37 @@
 	</recipe>
 	
 	<recipe name="modLongShotgunBarrel" count="1" craft_area="workbench" craft_time="25">
+		<ingredient name="resourceForgedIron" count="3"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapIron" count="5"/>
+		<ingredient name="resourceOil" count="1"/>
+		<ingredient name="resourceMetalPipe" count="3"/>
+	</recipe>
+	
+	<recipe name="modOverchargedCapacitor" count="1" craft_area="workbench" craft_time="25" tags="learnable">
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceMechanicalParts" count="10"/>
+		<ingredient name="resourceElectricParts" count="15"/>
+		<ingredient name="resourceGlue" count="2"/>
+	</recipe>
+	
+	<recipe name="modLaserSplitter" count="1" craft_area="workbench" craft_time="25" tags="learnable">
+		<ingredient name="resourceForgedIron" count="3"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapIron" count="5"/>
+		<ingredient name="resourceOil" count="1"/>
+		<ingredient name="resourceMetalPipe" count="3"/>
+	</recipe>
+	
+	<recipe name="modLaserFocuser" count="1" craft_area="workbench" craft_time="25" tags="learnable">
+		<ingredient name="resourceForgedIron" count="3"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceScrapIron" count="5"/>
+		<ingredient name="resourceOil" count="1"/>
+		<ingredient name="resourceMetalPipe" count="3"/>
+	</recipe>
+	
+	<recipe name="modLaserScope" count="1" craft_area="workbench" craft_time="25" tags="learnable">
 		<ingredient name="resourceForgedIron" count="3"/>
 		<ingredient name="resourceMechanicalParts" count="5"/>
 		<ingredient name="resourceScrapIron" count="5"/>

@@ -1,11 +1,11 @@
 <configs>
   
   <append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='wildernessGroup']">
-    <prefab name="../../Mods/NukaColas/Prefabs/Nuka_Factory" min_count="1" max_count="2" prob=".1" min_repeat_distance="4000"/>
+    <prefab name="../../Mods/NukaColas/Prefabs/Nuka_Factory" min_count="1" max_count="3" prob=".15" min_repeat_distance="4000"/>
   </append>
   
   <append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='industrial_Bldgs']">
-    <prefab name="../../Mods/NukaColas/Prefabs/Nuka_Factory" min_count="1" max_count="1" prob=".1" min_repeat_distance="4000"/>
+    <prefab name="../../Mods/NukaColas/Prefabs/Nuka_Factory" min_count="1" max_count="3" prob=".15" min_repeat_distance="4000"/>
   </append>
   
 </configs>

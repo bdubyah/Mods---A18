@@ -87,6 +87,27 @@
 			<property name="MaxDamage" value="25"/>
 		</block>
 		
+		<block name="SunsetSarsaparilla">
+			<property name="Material" value="Mglass"/>
+			<property name="IsTerrainDecoration" value="true"/>	
+			<property name="Shape" value="ModelEntity"/>	
+			<property name="Model" value="#@modfolder:Resources/SS.unity3d?Sunset1.prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="Place" value="TowardsPlacerInverted"/>			
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+			<property name="CustomIcon" value="" />
+			<property name="CanPickup" value="true" param1="drinkSunsetSarsaparilla"/>
+			<property name="Stabilitysupport" value="false"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Stacknumber" value="10"/>
+			<property class="RepairItems"> <property name="resourceBrokenGlass" value="1"/> </property>
+			<property name="Group" value="Basics,Building"/>
+			<property name="DescriptionKey" value="SunsetSarsaparillaDesc"/>
+			<property name="FilterTags" value="fdecor"/>
+			<property name="SortOrder1" value="70a0"/>	
+			<property name="MaxDamage" value="25"/>
+		</block>
+		
 		<block name="Terminal">
 			<property name="Material" value="Mmetal"/>
 			<property name="IsTerrainDecoration" value="false"/>
@@ -404,7 +425,7 @@
 		<block name="cntNukaVendingMachineBroken">
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Group" value="Science"/>
-			<property name="DescriptionKey" value="cntNukaVendingMachineDesc"/>
+			<property name="DescriptionKey" value="cntNukaVendingMachineBrokenDesc"/>
 			<property name="CustomIcon" value="cntNukaVendingMachine"/>
 			<property name="DisplayType" value="blockHardenedMulti"/>
 			<property name="Material" value="Mmetal_medium"/>
@@ -439,7 +460,48 @@
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Model" value="#@modfolder:Resources/NukaVend.unity3d?NukaVendingMachine.prefab"/><property name="ModelOffset" value="0,0,0"/>
 			<property name="Class" value="VendingMachine"/>
-			<property name="TraderID" value="22"/>
+			<property name="TraderID" value="22"/>			
+		</block>
+		
+		<block name="cntSSVendingMachineBroken">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Group" value="Science"/>
+			<property name="DescriptionKey" value="cntSSVendingMachineBrokenDesc"/>
+			<property name="CustomIcon" value="cntSSVendingMachine"/>
+			<property name="DisplayType" value="blockHardenedMulti"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="StabilitySupport" value="false"/> 
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#@modfolder:Resources/SSVend.unity3d?SSVendingMachineBroken.prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property class="RepairItems"> <property name="resourceForgedIron" value="5"/> </property>
+			<property name="Stacknumber" value="10"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="Buff" value="buffShocked"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceForgedIron" count="1,3" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="2,5" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceSpring" count="1,3" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceForgedSteel" count="2,3" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="floot,ffurniture"/>
+		</block>
+		
+		<block name="cntSSVendingMachine">
+			<property name="Extends" value="cntSSVendingMachineBroken"/>
+			<property name="DescriptionKey" value="cntSSVendingMachineDesc"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="#@modfolder:Resources/SSVend.unity3d?SSVendingMachine.prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="Class" value="VendingMachine"/>
+			<property name="TraderID" value="23"/>
 		</block>
 		
 		<block name="cntLunchbox">

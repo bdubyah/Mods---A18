@@ -5,14 +5,16 @@
 		<stack_type value="replace"/>
 		<duration value="180"/>
 		<effect_group>
-			<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".1">
+				<requirement name="NotHasBuff" buff="NukaQuantumBuff,NukaQuartzBuff,NukaCherryBuff"/>
+			</passive_effect>
 			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.1"/>
 			<passive_effect name="HealthMaxModifierOT" operation="base_add" value=".05"/>
 			<passive_effect name="StaminaMaxModifierOT" operation="base_add" value=".2"/>
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.25">
 				<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
 			</passive_effect>
-			<passive_effect name="StaminaChangeOT" operation="perc_add" duration="180" value="0.1">
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
 				<requirement name="HasBuff" buff="buffHealWaterMax"/>
 			</passive_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="20"/>
@@ -23,12 +25,14 @@
 		<stack_type value="replace"/>
 		<duration value="240"/>
 		<effect_group>
-			<passive_effect name="RunSpeed" operation="perc_add" value=".2"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2">
+				<requirement name="NotHasBuff" buff="NukaQuantumBuff,NukaQuartzBuff,NukaColaBuff"/>
+			</passive_effect>
 			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.1"/>
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.28">
 				<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
 			</passive_effect>
-			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.15">
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
 				<requirement name="HasBuff" buff="buffHealWaterMax"/>
 			</passive_effect>
 			<passive_effect name="EntityDamage" operation="perc_add" value="5">
@@ -42,14 +46,16 @@
 		<stack_type value="replace"/>
 		<duration value="300"/>
 		<effect_group>
-			<passive_effect name="RunSpeed" operation="perc_add" value=".5"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".5">
+				<requirement name="NotHasBuff" buff="NukaQuartzBuff,NukaCherryBuff,NukaColaBuff"/>
+			</passive_effect>
 			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.15"/>
 			<passive_effect name="HealthChangeOT" operation="perc_add" value="0.2"/>
 			<passive_effect name="StaminaLossMaxMult" operation="perc_subtract" value="0.25"/>			
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.33">
 				<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
 			</passive_effect>
-			<passive_effect name="StaminaChangeOT" operation="perc_add" duration="300" value="0.2">
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
 				<requirement name="HasBuff" buff="buffHealWaterMax"/>
 			</passive_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="50"/>
@@ -80,7 +86,9 @@
 		<stack_type value="replace"/>
 		<duration value="240"/>
 		<effect_group>
-			<passive_effect name="RunSpeed" operation="perc_add" value=".3"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".3">
+				<requirement name="NotHasBuff" buff="NukaQuantumBuff,NukaCherryBuff,NukaColaBuff"/>
+			</passive_effect>
 			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.15"/>
 			<passive_effect name="HealthLoss" operation="perc_subtract" value="0.25"/>
 			<passive_effect name="HealthChangeOT" operation="perc_add" value="0.1"/>
@@ -115,6 +123,29 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 		</effect_group>
 	</buff> 
+	
+	<buff name="SunsetSarsaparillaBuff" name_key="Sunset Sarsaparilla" description_key="The refreshing taste of Sunset Sarsaparilla has you feeling reinvigorated! Recover stamina quicker, and restore a small amount of max health and stamina." icon="NukaBuffIcon" tags="drug">
+		<stack_type value="replace"/>
+		<duration value="180"/>
+		<update_rate value="1"/>
+		<effect_group>			
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.2">
+				<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
+				<requirement name="HasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
+		</effect_group>
+	</buff>
+	
+	<buff name="SunsetSarsaparilla2Buff" name_key="Sunset Sarsaparilla2" description_key="" icon="" tags="drug" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="20"/>
+		<effect_group>
+			<passive_effect name="StaminaMaxModifierOT" operation="base_add" value="0.01"/>
+			<passive_effect name="HealthMaxModifierOT" operation="base_add" value="0.01"/>			
+		</effect_group>
+	</buff>
 
 	</append>
 </configs>

@@ -37,11 +37,11 @@
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="maxHealthAmount" operation="add" value="10"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="40"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,NukaColaBuff"/>					
-			<display_value name="dStaminaRegen" value=".25"/>
-			<display_value name="dRunSpeed" value=".1"/>
-			<display_value name="dDuration" value="180"/>
-			<display_value name="dInstantHealth" value="20"/>
-			<display_value name="staminaAmount" value=".25" />
+				<display_value name="dStaminaRegen" value=".25"/>
+				<display_value name="dRunSpeed" value=".1"/>
+				<display_value name="dDuration" value="180"/>
+				<display_value name="dInstantHealth" value="20"/>
+				<display_value name="staminaAmount" value=".25" />
 			</effect_group>
 			
 			<effect_group tiered="false">
@@ -85,12 +85,12 @@
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="30"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,NukaCherryBuff"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="maxHealthAmount" operation="add" value="15"/>
-			<display_value name="dEntityDamageBrawling" value="5"/>
-			<display_value name="dStaminaRegen" value=".28"/>
-			<display_value name="dRunSpeed" value=".2"/>
-			<display_value name="dDuration" value="240"/>
-			<display_value name="dInstantHealth" value="25"/>
-			<display_value name="staminaAmount" value=".28" />
+				<display_value name="dEntityDamageBrawling" value="5"/>
+				<display_value name="dStaminaRegen" value=".28"/>
+				<display_value name="dRunSpeed" value=".2"/>
+				<display_value name="dDuration" value="240"/>
+				<display_value name="dInstantHealth" value="25"/>
+				<display_value name="staminaAmount" value=".28" />
 			</effect_group>
 
 			<effect_group tiered="false">
@@ -134,11 +134,11 @@
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,NukaQuantumBuff"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="maxHealthAmount" operation="add" value="35"/>
-			<display_value name="dStaminaRegen" value=".33"/>
-			<display_value name="dRunSpeed" value=".5"/>
-			<display_value name="dDuration" value="300"/>
-			<display_value name="dInstantHealth" value="50"/>
-			<display_value name="staminaAmount" value=".33" />
+				<display_value name="dStaminaRegen" value=".33"/>
+				<display_value name="dRunSpeed" value=".5"/>
+				<display_value name="dDuration" value="300"/>
+				<display_value name="dInstantHealth" value="50"/>
+				<display_value name="staminaAmount" value=".33" />
 			</effect_group>
 
 			<effect_group tiered="false">
@@ -182,11 +182,11 @@
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="25"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,NukaQuartzBuff"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="maxHealthAmount" operation="add" value="25"/>
-			<display_value name="dStaminaRegen" value=".27"/>
-			<display_value name="dRunSpeed" value=".3"/>
-			<display_value name="dDuration" value="240"/>
-			<display_value name="dInstantHealth" value="35"/>
-			<display_value name="staminaAmount" value=".27" />
+				<display_value name="dStaminaRegen" value=".27"/>
+				<display_value name="dRunSpeed" value=".3"/>
+				<display_value name="dDuration" value="240"/>
+				<display_value name="dInstantHealth" value="35"/>
+				<display_value name="staminaAmount" value=".27" />
 			</effect_group>
 
 			<effect_group tiered="false">
@@ -195,17 +195,130 @@
 			</effect_group>
 		</item>
 		
-		<item name="resourceBottlecaps">
-			<property name="Meshfile" value="#Other/Items?Tools/nailProjectilePrefab.prefab"/>
-			<property name="HoldType" value="45"/>
+		<item name="drinkSunsetSarsaparilla">
+			<property name="HoldType" value="3"/>
+			<property name="DisplayType" value="SunsetDisplay"/>
+			<property name="DescriptionKey" value="drinkSunsetSarsaparillaDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/SS.unity3d?Sunset1.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/SS.unity3d?Sunset1.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="CustomIcon" value="SunsetSarsaparilla"/>
+			<property name="Stacknumber" value="15"/> 
+			<property name="Weight" value="10"/>
+			<property name="EconomicValue" value="250"/>
+			<property name="CraftingIngredientTime" value="15"/>
+			<property name="UnlockedBy" value="bookNukaRecipes"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+				<property name="Create_item" value="resourceBottlecaps"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="PlaceAsBlock"/>
+				<property name="Blockname" value="SunsetSarsaparilla"/>
+			</property>
+			<property name="Group" value="Basics,Decor/Miscellaneous"/>		
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="lightSource"/>
+			<property name="AlwaysActive" value="true"/>
+			<property name="Group" value="Food/Cooking"/>
+
+			<effect_group tiered="false">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>					
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="maxHealthAmount" operation="add" value="20"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="maxHealthIncrease" operation="set" value="@medicPerkIncrease"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalHealthAmount" operation="add" value="20"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="healthIncrease" operation="set" value="@healthPerkIncrease"/>		
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>						
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,SunsetSarsaparillaBuff"/>
+				<display_value name="dStaminaRegen" value=".2"/>
+				<display_value name="dDuration" value="180"/>				
+				<display_value name="staminaAmount" value=".20" />
+			</effect_group>
+
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		
+		<item name="drinkSunsetSarsaparillaStar">
+			<property name="HoldType" value="3"/>
+			<property name="DisplayType" value="SunsetDisplay"/>
+			<property name="DescriptionKey" value="drinkSunsetSarsaparillaStarDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/SS.unity3d?Sunset1.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/SS.unity3d?Sunset1.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="CustomIcon" value="SunsetSarsaparilla"/>
+			<property name="Stacknumber" value="15"/> 
+			<property name="Weight" value="10"/>
+			<property name="EconomicValue" value="250"/>
+			<property name="CraftingIngredientTime" value="15"/>
+			<property name="UnlockedBy" value="bookNukaRecipes"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+				<property name="Create_item" value="resourceBottlecapStar"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="PlaceAsBlock"/>
+				<property name="Blockname" value="SunsetSarsaparilla"/>
+			</property>
+			<property name="Group" value="Basics,Decor/Miscellaneous"/>		
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="lightSource"/>
+			<property name="AlwaysActive" value="true"/>
+			<property name="Group" value="Food/Cooking"/>
+
+			<effect_group tiered="false">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>					
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="maxHealthAmount" operation="add" value="20"/> 
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="maxHealthIncrease" operation="set" value="@medicPerkIncrease"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalHealthAmount" operation="add" value="20"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="healthIncrease" operation="set" value="@healthPerkIncrease"/>		
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>						
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,SunsetSarsaparillaBuff"/>
+				<display_value name="dStaminaRegen" value=".2"/>
+				<display_value name="dDuration" value="180"/>				
+				<display_value name="staminaAmount" value=".20" />
+			</effect_group>
+
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		
+		<item name="resourceBottlecaps">			
+			<property name="HoldType" value="21"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="Bottlecaps"/>
-			<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="Meshfile" value="#@modfolder:Resources/caps.unity3d?BC.prefab"/>
+			<property name="HandMeshfile" value="#@modfolder:Resources/caps.unity3d?BC.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="MresourceScrapIron"/>
 			<property name="Weight" value="2"/>
 			<property name="Stacknumber" value="1000"/> 
 			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		
+		<item name="resourceBottlecapStar">			
+			<property name="HoldType" value="21"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="BottlecapStar"/>
+			<property name="Meshfile" value="#@modfolder:Resources/caps.unity3d?SSBC.prefab"/>
+			<property name="HandMeshfile" value="#@modfolder:Resources/caps.unity3d?SSBC.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Weight" value="2"/>
+			<property name="Stacknumber" value="10"/> 
+			<property name="EconomicValue" value="1500"/>
 			<property name="EconomicBundleSize" value="10"/>
 			<property name="Group" value="Resources"/>
 		</item>
