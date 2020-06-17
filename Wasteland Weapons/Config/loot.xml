@@ -50,6 +50,8 @@
 	<item name="gunTripleBarrelShotgunSchematic"/>
 	<item name="gunLaserPistolSchematic" loot_prob_template="GradeCLootLow"/>
 	<item name="gunLaserRifleSchematic" loot_prob_template="GradeCLootLow"/>
+	<item name="gunPlasmaPistolSchematic" loot_prob_template="GradeCLootLow"/>
+	<item name="gunPlasmaRifleSchematic" loot_prob_template="GradeCLootLow"/>
 </append>
 
 <append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsRare']">
@@ -60,6 +62,8 @@
 	<item name="gunTripleBarrelShotgunSchematic"/>
 	<item name="gunLaserPistolSchematic"/>
 	<item name="gunLaserRifleSchematic"/>
+	<item name="gunPlasmaPistolSchematic"/>
+	<item name="gunPlasmaRifleSchematic"/>
 </append>
 
 <append xpath="/lootcontainers/lootgroup[@name='modGunT3']">
@@ -97,9 +101,13 @@
 	<item name="ammoNuke" count="1" prob=".2"/>
 	<item name="gunAERPrototype" count="1" prob=".005"/>
 	<item name="ammoIncinerator" count="5,10" prob="0.01"/>
-	<item name="ammoEC" count="5,10" prob="0.007"/>
-	<item name="ammoMFC" count="5,10" prob="0.007"/>
+	<item name="ammoEC" count="8,10" prob="0.01"/>
+	<item name="ammoMFC" count="8,10" prob="0.01"/>
+	<item name="ammoPEC" count="8,12" prob="0.01"/>
+	<item name="ammoPMFC" count="8,12" prob="0.01"/>
 	<item name="gunLaserPistol" count="1" prob="0.005"/>
+	<item name="gunPlasmaPistol" count="1" prob="0.005"/>
+	<item name="gunFlareGun" count="1" prob="0.01"/>
 </append>
 
 <!-- cntLootChestHero, fancy chest -->
@@ -114,6 +122,7 @@
 	<item name="gunTripleBarrelShotgun" count="1" prob=".01"/>
 	<item name="gunHeavySniper" count="1" prob=".01"/>
 	<item group="LaserMods" prob=".002"/>
+	<item name="gunFlareGun" count="1" prob="0.011"/>
 </append>
 
 <!-- lockers -->
@@ -124,8 +133,10 @@
 <!-- Treasure chest -->
 <append xpath="/lootcontainers/lootcontainer[@id='61']">
 	<item group="LegendaryPipeWeapons" prob=".007"/>
-	<item name="ammoEC" count="5,10" prob="0.007"/>
-	<item name="ammoMFC" count="5,10" prob="0.007"/>
+	<item name="ammoEC" count="8,10" prob="0.01"/>
+	<item name="ammoMFC" count="8,10" prob="0.01"/>
+	<item name="ammoPEC" count="8,12" prob="0.01"/>
+	<item name="ammoPMFC" count="8,12" prob="0.01"/>
 	<item name="gunMaria" count="1" prob="0.007"/>
 	<item group="LaserMods" prob=".002"/>
 </append>
@@ -138,11 +149,16 @@
 	<item name="gunIncinerator" prob="0.01"/>
 	<item name="ammoIncinerator" count="5,10" prob="0.007"/>
 	<item name="gunHeavySniper" count="1" prob=".01"/>
-	<item name="ammoEC" count="5,10" prob="0.007"/>
-	<item name="ammoMFC" count="5,10" prob="0.007"/>
+	<item name="ammoEC" count="8,10" prob="0.01"/>
+	<item name="ammoMFC" count="8,10" prob="0.01"/>
+	<item name="ammoPEC" count="8,12" prob="0.01"/>
+	<item name="ammoPMFC" count="8,12" prob="0.01"/>
 	<item name="gunLaserPistol" count="1" prob="0.005"/>
 	<item name="gunLaserRifle" count="1" prob="0.003"/>
+	<item name="gunPlasmaPistol" count="1" prob="0.0045"/>
+	<item name="gunPlasmaRifle" count="1" prob="0.0025"/>
 	<item group="LaserMods" prob=".002"/>
+	<item name="gunFlareGun" count="1" prob="0.01"/>
 </append>
 
 <!-- cntLootCrateHero, Hero / Hidden Stash Cardboard Loot-->
@@ -156,6 +172,7 @@
 <!-- cntWeaponsBagSmall -->
 <append xpath="/lootcontainers/lootcontainer[@id='100']">
 	<item group="LegendaryPipeWeapons" prob=".003"/>
+	<item name="gunFlareGun" count="1" prob="0.01"/>
 </append>
 
 <!-- cntWeaponsBagLarge -->
@@ -168,8 +185,10 @@
 <!-- cntBuriedStashChest -->
 <append xpath="/lootcontainers/lootcontainer[@id='102']">
 	<item group="LegendaryPipeWeapons" prob=".007"/>
-	<item name="ammoEC" count="5,10" prob="0.007"/>
-	<item name="ammoMFC" count="5,10" prob="0.007"/>
+	<item name="ammoEC" count="8,10" prob="0.01"/>
+	<item name="ammoMFC" count="8,10" prob="0.01"/>
+	<item name="ammoPEC" count="8,12" prob="0.01"/>
+	<item name="ammoPMFC" count="8,12" prob="0.01"/>
 </append>
 
 <!-- cntHardenedChestSecure, big, fancy chest -->
@@ -177,10 +196,14 @@
 	<item group="LegendaryPipeWeapons" prob=".007"/>
 	<item name="gunFatMan" prob="0.01"/>
 	<item name="ammoNuke" count="1,4" prob="0.02"/>
-	<item name="ammoEC" count="5,10" prob="0.007"/>
-	<item name="ammoMFC" count="5,10" prob="0.007"/>
+	<item name="ammoEC" count="5,10" prob="0.01"/>
+	<item name="ammoMFC" count="5,10" prob="0.01"/>
+	<item name="ammoPEC" count="8,12" prob="0.01"/>
+	<item name="ammoPMFC" count="8,12" prob="0.01"/>
 	<item name="gunLaserPistol" count="1" prob="0.005"/>
 	<item name="gunLaserRifle" count="1" prob="0.003"/>
+	<item name="gunPlasmaPistol" count="1" prob="0.0045"/>
+	<item name="gunPlasmaRifle" count="1" prob="0.0025"/>
 	<item name="gunLAR" count="1" prob="0.01"/>
 	<item group="LaserMods" prob=".002"/>
 </append>
