@@ -1445,8 +1445,8 @@
 	<property name="Meshfile" value="#@modfolder:Resources/flare.unity3d?FlareAmmo"/>
 	<property name="HoldType" value="45"/>
 	<property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/FlareStuff.unity3d?FlareAmmoplain"/>
-	<property name="DropScale" value="2"/>
+	<property name="DropMeshfile" value="#@modfolder:Resources/flare.unity3d?flareround"/>
+	<property name="DropScale" value=".05"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="IsSticky" value="false"/>
 	<property name="StickyOffset" value="0.04"/> 
