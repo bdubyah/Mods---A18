@@ -82,12 +82,12 @@
 </append>
 
 <!-- cars-->
-<append xpath="/lootcontainers/lootcontainer[@id='24']">
+<append xpath="/lootcontainers/lootcontainer[@id='19']">
 	<item name="ammoBowlingball" count="1,2" prob=".05"/>
 </append>
 
 <!-- garage stuff, tools, etc -->
-<append xpath="/lootcontainers/lootcontainer[@id='24']">
+<append xpath="/lootcontainers/lootcontainer[@id='22']">
 	<item name="ammoBowlingball" count="1,2" prob=".1"/>
 </append>
 
